@@ -92,11 +92,13 @@
  .header-mail {
      color: var(--secondary-text-color);
      text-decoration: none;
+     font-weight: 500;
  }
 
  .header-mail:hover,
  header-mail:focus {
      color: var(--accent-text-color);
+     font-weight: 500;
  }
 
  .header-tel {
@@ -109,14 +111,23 @@
      color: var(--accent-text-color);
  }
 
+
  /* hero */
+ .hero {
+     width: 1600px;
+     height: 600px;
+     color: var(--primary-whyte-color);
+     background: #2F303A;
+ }
+
  .hero-title {
+
      font-weight: 900;
      font-size: 44px;
      line-height: 1.36;
      letter-spacing: 0.06em;
-     color: var(--primary-whyte-color);
-     background: #2F303A;
+     text-transform: uppercase;
+
  }
 
  /* button */
@@ -128,6 +139,7 @@
      letter-spacing: 0.06em;
      color: var(--primary-whyte-color);
      background-color: var(--accent-text-color);
+     cursor: pointer;
  }
 
 
@@ -164,6 +176,9 @@
      height: 648px;
      left: 0px;
      top: 1449px;
+ }
+
+ .our-team {
      background: var(--secondary-background-color);
  }
 
@@ -180,7 +195,7 @@
      font-size: 16px;
      line-height: 1.18;
      letter-spacing: 0.03em;
-     color: var(--primary-text-color);
+     color: var(secondary-background-color);
  }
 
  .pic-text {
@@ -229,6 +244,7 @@
  }
 
  .portfolio-btn .current {
+     font-family: 'Roboto';
      background: var(--accent-text-color);
      font-weight: 500;
      font-size: 16px;
@@ -244,10 +260,11 @@
  }
 
  .portfolio-btn {
-     font-weight: 700;
-     font-size: 18px;
-     line-height: 2;
-     letter-spacing: 0.06em;
+     font-family: 'Roboto';
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.62;
+     letter-spacing: 0.03em;
      color: var(--primary-text-color);
      cursor: pointer;
  }
@@ -271,6 +288,7 @@
 
  /* footer-adress */
  .adress-text {
+     font-style: normal;
      font-weight: 400;
      font-size: 14px;
      line-height: 1.8;
@@ -298,6 +316,22 @@
      font-style: normal;
      text-decoration: none;
  }
+
+ .adress-text:hover,
+ .adress-text:focus {
+     color: var(--accent-text-color);
+ }
+
+ .footer-mail:hover,
+ .footer-mail:focus {
+     color: var(--accent-text-color);
+ }
+
+ .footer-tel:hover,
+ .footer-tel:focus {
+     color: var(--accent-text-color);
+ }
+
 
  .footer-main {
      background: var(--footer-background-color);
