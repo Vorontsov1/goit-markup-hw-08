@@ -120,6 +120,10 @@
 
 
  /* hero */
+   .hero {
+       background: #2F303A;
+   }
+
  .hero-title {
 
      font-weight: 900;
@@ -128,8 +132,9 @@
      letter-spacing: 0.06em;
      text-transform: uppercase;
      color: var(--primary-whyte-color);
-     background: #2F303A;
- }
+  }
+
+
 
  /* button */
  .button {
@@ -221,7 +226,7 @@
  }
 
  .logo-footer {
-     color: var(--primary-black-color);
+     color: var(--primary-whyte-color);
      text-decoration: none;
  }
 
@@ -239,6 +244,7 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
         color:var(--primary-whyte-color);
+        text-decoration: none;
 }
 
 .footer-mail{
@@ -248,6 +254,7 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
         color:var(--address-footer-color);
+        text-decoration: none;
 }
 
 .footer-tel {
@@ -257,6 +264,7 @@
             line-height: 1.71;
             letter-spacing: 0.03em;
             color: var(--address-footer-color);
+            text-decoration: none;
         }
         .adress-text:hover,
         .adress-text:focus {
