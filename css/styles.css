@@ -155,7 +155,7 @@
      font-size: 14px;
      line-height: 1.15;
      letter-spacing: 0.03em;
-     color: var(--title-black-color);
+     color: var(--primary-text-color);
      text-transform: uppercase;
  }
 
@@ -182,6 +182,7 @@
      height: 648px;
      left: 0px;
      top: 1449px;
+     background:var(--secondary-background-color);
  }
 
  .our-team {
@@ -205,10 +206,8 @@
  }
 
  .pic-text {
-     font-weight: 400;
      font-size: 16px;
      line-height: 1.17;
-     letter-spacing: 0.03em;
      color: var(--secondary-text-color);
  }
 
