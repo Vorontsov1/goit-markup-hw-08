@@ -7,8 +7,49 @@
      --secondary-background-color: #F5F4FA;
      --address-footer-color: rgba(255, 255, 255, 0.6);
      --footer-background-color: #2F303A;
+     --second-accent-text-color:#2191F3;
  }
 
+
+ p,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     margin: 0;
+ }
+
+ ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+ }
+
+ img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+ }
+
+ address {
+     font-style: normal;
+ }
+
+ .container {
+     width: 1200px;
+     padding-left: 15px;
+     padding-right: 15px;
+     margin-left: auto;
+     margin-right: auto;
+     outline: 1px solid red;
+ }
+ .container.contacts{
+   display: flex;
+   align-items: center;
+ }
 
  body {
      font-family: "Roboto", sans-serif;
@@ -54,6 +95,8 @@
      font-size: 26px;
      line-height: 1.2;
      letter-spacing: 0.03em;
+     margin-right: 93px;
+    
  }
 
  .logo-header {
@@ -62,6 +105,26 @@
  }
 
  /* header */
+.header-nav{
+    display: flex;
+    align-items:center;
+    outline: 1px solid red;
+}
+.adress-list{
+    display: flex;
+    outline: 1px solid red;
+    margin-left: 331px;
+}
+
+ .header{
+     padding-top: 24px;
+     padding-bottom: 24px;
+     display:flex;
+ }
+ .header-list{
+    display: flex;
+    align-items: center;
+ }
 
  .link.current {
      color: var(--accent-text-color);
@@ -82,6 +145,9 @@
      font-size: 14px;
      line-height: 1.5;
      letter-spacing: 0.02em;
+ }
+ .list-item:not(:last-child), .mailtel:not(:last-child){
+     margin-right: 50px;
  }
 
  .link:hover,
@@ -117,12 +183,20 @@
  .header-tel:focus {
      color: var(--accent-text-color);
  }
+ 
 
 
  /* hero */
-   .hero {
-       background: #2F303A;
-   }
+
+ .container-hero {
+ text-align: center;
+ }
+ .hero {
+     background: #2F303A;
+     padding-top: 200px;
+     padding-bottom: 200px;
+
+ }
 
  .hero-title {
 
@@ -132,12 +206,13 @@
      letter-spacing: 0.06em;
      text-transform: uppercase;
      color: var(--primary-whyte-color);
-  }
+     margin-bottom: 30px;
+ }
 
 
 
  /* button */
- .button {
+ .hero .button {
      font-family: inherit;
      font-weight: 700;
      font-size: 16px;
@@ -146,10 +221,32 @@
      color: var(--primary-whyte-color);
      background-color: var(--accent-text-color);
      cursor: pointer;
+     border: none;
+     padding: 10px 32px;
+ }
+ .hero .button:hover,
+ .hero .button:focus{
+   background-color: var(--second-accent-text-color);
  }
 
 
  /* main-section */
+.main-section{
+    display: flex;
+}
+.main-about + .main-about{
+  margin-left: 30px;
+}
+
+
+.main-about{
+    min-width: 270;
+}
+
+ .main-description{
+     padding-top: 94px;
+     padding-bottom: 47px;
+ }
  .main-title {
      font-weight: 700;
      font-size: 14px;
@@ -157,6 +254,7 @@
      letter-spacing: 0.03em;
      color: var(--primary-text-color);
      text-transform: uppercase;
+     margin-bottom: 10px;
  }
 
  .main-text {
@@ -165,9 +263,20 @@
      line-height: 1.71;
      letter-spacing: 0.03em;
      color: var(--secondary-text-color);
+     margin-bottom: 0;
+     margin-top: 0;
  }
 
  /* what_we_are_doing */
+ .section-item.centered,
+ .team-item.centered {
+    text-align: center;
+}
+
+ .about-deal{
+     padding-top: 47px;
+     padding-bottom: 94px;
+ }
  .section-item {
      font-weight: 700;
      font-size: 36px;
@@ -182,7 +291,7 @@
      height: 648px;
      left: 0px;
      top: 1449px;
-     background:var(--secondary-background-color);
+     background: var(--secondary-background-color);
  }
 
  .our-team {
@@ -236,49 +345,50 @@
      background: #2F303A;
  }
 
-.adress-text {
-        font-weight: 400;
-        font-style: normal;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color:var(--primary-whyte-color);
-        text-decoration: none;
-}
+ .adress-text {
+     font-weight: 400;
+     font-style: normal;
+     font-size: 14px;
+     line-height: 1.71;
+     letter-spacing: 0.03em;
+     color: var(--primary-whyte-color);
+     text-decoration: none;
+ }
 
-.footer-mail{
-    font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color:var(--address-footer-color);
-        text-decoration: none;
-}
+ .footer-mail {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 1.71;
+     letter-spacing: 0.03em;
+     color: var(--address-footer-color);
+     text-decoration: none;
+ }
 
-.footer-tel {
-    font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-            color: var(--address-footer-color);
-            text-decoration: none;
-        }
-        .adress-text:hover,
-        .adress-text:focus {
-            color: var(--accent-text-color);
-        }
-    
-        .footer-mail:hover,
-        .footer-mail:focus {
-            color: var(--accent-text-color);
-        }
-    
-        .footer-tel:hover,
-        .footer-tel:focus {
-            color: var(--accent-text-color);
-        }
+ .footer-tel {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 1.71;
+     letter-spacing: 0.03em;
+     color: var(--address-footer-color);
+     text-decoration: none;
+ }
+
+ .adress-text:hover,
+ .adress-text:focus {
+     color: var(--accent-text-color);
+ }
+
+ .footer-mail:hover,
+ .footer-mail:focus {
+     color: var(--accent-text-color);
+ }
+
+ .footer-tel:hover,
+ .footer-tel:focus {
+     color: var(--accent-text-color);
+ }
 
 
 
@@ -343,24 +453,25 @@
      color: var(--primary-whyte-color);
      background-color: var(--accent-text-color);
  }
+
  /* main-pic */
  .section-pic {}
 
  .list {}
 
  .pictures-item {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
-        color:var(--primary-text-color);
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 2;
+     letter-spacing: 0.06em;
+     color: var(--primary-text-color);
  }
 
  .pictures-text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.88;
-        letter-spacing: 0.03em;
-    
-        color:var(--secondary-text-color);
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 1.88;
+     letter-spacing: 0.03em;
+
+     color: var(--secondary-text-color);
  }
