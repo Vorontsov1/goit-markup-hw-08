@@ -44,7 +44,6 @@
      padding-right: 15px;
      margin-left: auto;
      margin-right: auto;
-     outline: 1px solid red;
  }
  .container.contacts{
    display: flex;
@@ -108,11 +107,9 @@
 .header-nav{
     display: flex;
     align-items:center;
-    outline: 1px solid red;
 }
 .adress-list{
     display: flex;
-    outline: 1px solid red;
     margin-left: 331px;
 }
 
@@ -284,8 +281,46 @@
      letter-spacing: 0.03em;
      color: var(--title-black-color);
  }
+.section-pic{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 94px;
+   }
+.pic-with:not(:last-child){
+    margin-right: 30px;
+}
+
+
 
  /* our_team */
+
+.team-text{
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+    background-color: var(--primary-whyte-color); 
+}
+.border-team-img{
+display: block;
+    width: 270px;
+    height: 108px;
+    border-style: solid;
+    border-top: none;
+    border-width: 1px;
+    border-color: var(--primary-whyte-color);
+}
+
+.team-pic{
+   
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 94px;
+    display: flex;
+}
+.team-image:not(:last-child) {
+    margin-right: 30px;
+  }
+ 
+
  .our-team list {
      width: 1600px;
      height: 648px;
@@ -295,7 +330,11 @@
  }
 
  .our-team {
-     background: var(--secondary-background-color);
+    width: 1600px;
+    height: 648px;
+    left: 0px;
+    top: 1449px;
+    background: var(--secondary-background-color);
  }
 
  .team-item {
@@ -303,27 +342,40 @@
      font-size: 36px;
      line-height: 1.17;
      letter-spacing: 0.03em;
+     margin-bottom: 50px;
      color: var(--title-black-color);
  }
 
+
  .pic-item {
+    text-align: center;
      font-weight: 500;
      font-size: 16px;
      line-height: 1.18;
      letter-spacing: 0.03em;
      color: var(--primary-text-color);
+     padding-top: 30px;
  }
 
  .pic-text {
+     text-align: center;
      font-size: 16px;
      line-height: 1.17;
      color: var(--secondary-text-color);
+     padding-top: 10px;
  }
 
  /* footer */
 
  /* logo-footer */
- .logo {
+}
+.footer-container{
+
+    text-align: left;
+    margin-left: 215px;
+}
+
+ .footer-logo-web {
      color: var(--accent-text-color);
      text-decoration: none;
      font-family: "Raleway";
@@ -331,18 +383,20 @@
      font-size: 26px;
      line-height: 1.2;
      letter-spacing: 0.03em;
- }
+}
 
- .logo-footer {
+ .footer-logo-studio {
      color: var(--primary-whyte-color);
      text-decoration: none;
  }
 
  .footer-main {
-
-     left: 0px;
-     top: 2097px;
-     background: #2F303A;
+        margin-top: 48px;
+        width: 1600px;
+        height: 252px;
+        left: 0px;
+        top: 2097px;
+        background-color: var(--footer-background-color);
  }
 
  .adress-text {
@@ -354,26 +408,17 @@
      color: var(--primary-whyte-color);
      text-decoration: none;
  }
+.footer-mail,
+.footer-tel {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin-top: 9px;
+    color: var(--address-footer-color);
+}
 
- .footer-mail {
-     font-style: normal;
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 1.71;
-     letter-spacing: 0.03em;
-     color: var(--address-footer-color);
-     text-decoration: none;
- }
-
- .footer-tel {
-     font-style: normal;
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 1.71;
-     letter-spacing: 0.03em;
-     color: var(--address-footer-color);
-     text-decoration: none;
- }
 
  .adress-text:hover,
  .adress-text:focus {
@@ -408,18 +453,35 @@
      cursor: pointer;
  }
 
- .portfolio-btn {
-     color: var(--accent-text-color);
+ .main-btn{
+    display: flex;
+        margin-bottom: 50px;
+        align-items: center;
+        justify-content: center;
  }
 
+.btn {
+        cursor: pointer;
+        border: none;
+        align-items: center;
+            color: var(--primary-text-color);
+}
+.btn:not(:last-child) {
+    margin-right: 8px;
+}
+
  .portfolio-btn {
-     font-family: 'Roboto';
-     font-weight: 500;
-     font-size: 16px;
-     line-height: 1.62;
-     letter-spacing: 0.03em;
-     color: var(--primary-whyte-color);
- }
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.03em;
+        border-radius: 4px;
+        padding: 6px 22px;
+    
+    }
+
 
  .portfolio-btn:hover,
  .portfolio-btn:focus {
@@ -428,42 +490,19 @@
  }
 
  .portfolio-btn {
-     font-family: 'Roboto';
-     font-weight: 500;
-     font-size: 16px;
-     line-height: 1.62;
-     letter-spacing: 0.03em;
-     color: var(--primary-text-color);
      cursor: pointer;
- }
-
- .portfolio-btn-colored {
-     font-weight: 500;
-     font-size: 16px;
-     line-height: 1.62;
-     letter-spacing: 0.03em;
-     color: var(--primary-text-color);
-     cursor: pointer;
-     color: var(--primary-whyte-color);
-     background-color: var(--accent-text-color);
- }
-
- .portfolio-btn-colored:hover,
- .portfolio-btn-colored:focus {
-     color: var(--primary-whyte-color);
-     background-color: var(--accent-text-color);
  }
 
  /* main-pic */
- .section-pic {}
-
- .list {}
-
+ .section-list{
+     flex-basis: calc(100% / 9);
+ }
  .pictures-item {
      font-weight: 700;
      font-size: 18px;
      line-height: 2;
      letter-spacing: 0.06em;
+     margin: 10px 24px; 
      color: var(--primary-text-color);
  }
 
@@ -472,6 +511,19 @@
      font-size: 16px;
      line-height: 1.88;
      letter-spacing: 0.03em;
-
+     margin: 4px 24px;
      color: var(--secondary-text-color);
  }
+.card-set{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 180px;
+}
+
+.setup{
+     flex-basis: calc(100% / 3 - 30px);
+     margin: 15px;
+     background: var(--primary-whyte-color);
+     border: 1px solid #EEEEEE;
+    
+}
