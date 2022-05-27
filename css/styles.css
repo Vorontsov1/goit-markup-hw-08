@@ -89,7 +89,7 @@
      text-decoration: none;
  }
 
- /* logo */
+ /*----------------- logo ------------------*/
 
  .logo {
      color: var(--accent-text-color);
@@ -100,6 +100,9 @@
      line-height: 1.2;
      letter-spacing: 0.03em;
      margin-right: 93px;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
 
  }
 
@@ -108,7 +111,7 @@
      text-decoration: none;
  }
 
- /* header */
+ /*------------- header -------------*/
 .header {
     background-color: var(--main-title-color);
     padding-top: 25px;
@@ -181,7 +184,7 @@
  }
 
  .header-mail:hover,
- header-mail:focus {
+ .header-mail:focus {
      color: var(--accent-text-color);
      font-weight: 500;
  }
@@ -199,10 +202,18 @@
  .header-tel:focus {
      color: var(--accent-text-color);
  }
+ .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+ }
 
-
-
- /* hero */
+ .mailtel{
+    display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+ }
+ /*------------------ hero -------------------*/
 .hero-container{
     text-align: center;
 }
@@ -230,7 +241,7 @@
 
 
 
- /* button */
+ /*-------------------- button ------------------*/
  .hero .button {
      font-family: inherit;
      font-weight: 700;
@@ -252,7 +263,7 @@
  }
 
 
- /* main-section */
+ /*---------------- main-section ------------------*/
  .main-section {
      display: flex;
  }
@@ -291,7 +302,7 @@
      margin-top: 0;
  }
 
- /* what_we_are_doing */
+ /*----------------- what_we_are_doing ---------------*/
  .section-item.centered,
  .team-item.centered {
      text-align: center;
@@ -321,7 +332,7 @@
 
 
 
- /* our_team */
+ /*------------------- our_team ------------------*/
 
  .team-text {
      padding-top: 30px;
@@ -393,9 +404,9 @@
      padding-top: 10px;
  }
 
-     /* footer */
+     /*------------------ footer ---------------*/
 
-     /* logo-footer */
+     /*------ logo-footer -----------*/
   .footer-main {
       padding-top: 60px;
       padding-bottom: 60px;
@@ -468,8 +479,8 @@
 
 
 
- /* portfolio */
- /* main btn */
+ /*--------------- portfolio ------------*/
+ /*--------- main btn ----------*/
  .portfolio-item {
      background-color: var(---primary-whyte-color);
      border-radius: 4px;
@@ -522,7 +533,7 @@
      background-color: var(--accent-text-color);
  }
 
- /* main-pic */
+ /*------------- main-pic --------------*/
 .portfolio-set {
     padding-left: 24px;
     padding-right: 24px;
