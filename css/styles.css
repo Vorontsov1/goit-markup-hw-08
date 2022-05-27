@@ -193,9 +193,7 @@
 
  /* hero */
 
- .container {
-     text-align: center;
- }
+
 
  .hero {
      background: var(--footer-background-color);
@@ -391,10 +389,6 @@
       background-color: var(--footer-background-color);
   }
 
- .footer-container {
-     text-align: left;
- }
-
  .footer-logo-web {
      color: var(--accent-text-color);
      text-decoration: none;
@@ -417,7 +411,7 @@
      margin-bottom: 9px;
  }
 
- .mail-contacts {
+ .footer-adress {
      margin-bottom: 9px;
  }
 
@@ -508,6 +502,7 @@
      letter-spacing: 0.03em;
      border-radius: 4px;
      padding: 6px 22px;
+    cursor: pointer;
      background-color: var(--secondary-background-color);
  }
 
@@ -516,10 +511,6 @@
  .portfolio-btn:focus {
      color: var(--primary-whyte-color);
      background-color: var(--accent-text-color);
- }
-
- .portfolio-btn {
-     cursor: pointer;
  }
 
  /* main-pic */
