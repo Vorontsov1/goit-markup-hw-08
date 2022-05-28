@@ -113,13 +113,7 @@
 
  /*------------- header -------------*/
 .header {
-    background-color: var(--main-title-color);
-    padding-top: 25px;
-    padding-bottom: 25px;
-    display: block;
-    border-bottom-style: solid;
-    border-color: #ececec;
-    border-width: 1px;
+    border-bottom:1px solid #ececec;
 }
 
  .header-nav {
@@ -143,20 +137,20 @@
      align-items: center;
  }
 
- .link.current {
+ .header-link {
      color: var(--accent-text-color);
      font-weight: 500;
      font-size: 14px;
-     line-height: 1.5;
+     line-height: 1.14;
      letter-spacing: 0.02em;
  }
 
- .link.current:hover,
- .link.current:focus {
+ .header-link:hover,
+ .header-link:focus {
      color: var(--accent-text-color);
  }
 
- .link {
+ .header-link {
      color: var(--title-black-color);
      font-weight: 500;
      font-size: 14px;
@@ -164,7 +158,7 @@
      letter-spacing: 0.02em;
  }
 
- .list-item:not(:last-child),
+ .header-item:not(:last-child),
  .mailtel:not(:last-child) {
      margin-right: 50px;
  }
@@ -181,6 +175,8 @@
      font-size: 14px;
      line-height: 1.14;
      letter-spacing: 0.02em;
+     padding-top: 30px;
+     padding-bottom: 30px;
  }
 
  .header-mail:hover,
@@ -196,23 +192,23 @@
      font-size: 14px;
      line-height: 1.14;
      letter-spacing: 0.02em;
- }
+     padding-top: 30px;
+     padding-bottom: 30px;
+     margin-left: 50px;
+}
+
 
  .header-tel:hover,
  .header-tel:focus {
      color: var(--accent-text-color);
  }
- .link{
+ .header-link{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
  }
 
- .mailtel{
-    display: block;
-        padding-top: 32px;
-        padding-bottom: 32px;
- }
+
  /*------------------ hero -------------------*/
 .hero-container{
     text-align: center;
@@ -401,7 +397,7 @@
      line-height: 1.17;
      letter-spacing: 0.03em;
      color: var(--secondary-text-color);
-     padding-top: 10px;
+     margin-top: 10px;
  }
 
      /*------------------ footer ---------------*/
@@ -435,7 +431,7 @@
      margin-bottom: 9px;
  }
 
- .footer-adress {
+ .footer-adress:not(:last-child) {
      margin-bottom: 9px;
  }
 
@@ -523,6 +519,7 @@
      border-radius: 4px;
      padding: 6px 22px;
      cursor: pointer;
+     border: none;
      background-color: var(--secondary-background-color);
  }
 
@@ -535,10 +532,7 @@
 
  /*------------- main-pic --------------*/
 .portfolio-set {
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 24px;
 }
 
  .pictures-item {
