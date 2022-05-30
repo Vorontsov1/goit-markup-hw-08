@@ -219,10 +219,20 @@
 
 
  .hero {
-     background: var(--footer-background-color);
+     background: var(--footer-background-color); 
      padding-top: 200px;
      padding-bottom: 200px;
-
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+     min-width: 1600px;
+     background-image: linear-gradient(
+     rgba(47, 48, 58, 0.4)),
+     rgba(47, 48, 58, 0.4),
+         url(../img/head.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
  }
 
  .hero-title {
