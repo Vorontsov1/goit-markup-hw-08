@@ -246,6 +246,19 @@
      color: var(--primary-whyte-color);
      margin-bottom: 30px;
  }
+.main-section-item{
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
 
 
 
@@ -370,6 +383,9 @@
 
  .team-image:not(:last-child) {
      margin-right: 30px;
+    width: calc(100% / 4);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
  }
 
  .our-team list {
@@ -396,11 +412,11 @@
 
  .pic-item {
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
-        letter-spacing: 0.03em;
-     color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
  }
 
  .pic-text {
