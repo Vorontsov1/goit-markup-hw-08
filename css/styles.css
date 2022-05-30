@@ -50,11 +50,6 @@
      padding-bottom: 94px;
  }
 
- .container.contacts {
-     display: flex;
-     align-items: center;
- }
-
  body {
      font-family: "Roboto", sans-serif;
      background-color: var(--primary-whyte-color);
@@ -123,7 +118,11 @@
 
  .adress-list {
      display: flex;
-     margin-left: 331px;
+     margin-left: auto;
+ }
+
+ .adress-contacts:not(:last-child){
+     margin-left: 50px;
  }
 
  .contacts {
@@ -206,6 +205,10 @@
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+ }
+
+ .header-item.current .header-link{
+     color:var(--accent-text-color);
  }
 
 
@@ -533,6 +536,8 @@
  /*------------- main-pic --------------*/
 .portfolio-set {
     padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: none;
 }
 
  .pictures-item {
@@ -571,8 +576,3 @@
      padding-bottom: 20px;
  }
 
- .border-img {
-     border-top: none;
-     border: 1px solid #eeeeee;
- }
- 
