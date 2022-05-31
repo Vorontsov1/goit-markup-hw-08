@@ -125,6 +125,7 @@
      margin-left: 50px;
  }
 
+
  .contacts {
     display: flex;
     align-items: center;
@@ -209,6 +210,31 @@
 
  .header-item.current .header-link{
      color:var(--accent-text-color);
+ }
+
+ .header-contacts{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
+    display: inline-block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+ }
+
+ .mailto, .telto{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-right: 10px;
+ }
+
+ .header-contacts{
+    color: var(--accent-text-color);
  }
 
 
@@ -474,6 +500,7 @@
      text-decoration: none;
  }
 
+
  .footer-mail,
  .footer-tel {
      font-style: normal;
@@ -501,6 +528,56 @@
      color: var(--accent-text-color);
  }
 
+ .footer-blocks {
+     display: flex;
+ }
+
+ .footer-join{
+    margin-bottom: 20px;
+    color: var(--primary-whyte-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+ }
+
+
+
+
+ .footer-social-list{
+    display: flex;
+    justify-content: center;
+ }
+
+ .footer-social-item {
+    width: 44px;
+    height: 44px;
+ }
+
+ .footer-social-link {
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+     background-color: rgba(255, 255, 255, 10%);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #ffffff; 
+ }
+
+ .footer-social-icon {
+     fill:white;
+ }
+
+ .footer-social-link:hover,
+ .footer-social-link:focus {
+     background-color: var(--accent-text-color);
+ }
+
+.footer-social-item+.footer-social-item {
+    margin-left: 10px;
+}
 
 
  /*--------------- portfolio ------------*/

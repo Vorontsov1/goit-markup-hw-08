@@ -29,8 +29,20 @@
         </ul>
       </nav>
       <ul class="adress-list list">
-        <li class="adress-contacts"><a href="mailto:info@devstudio.com" class="header-mail">info@devstudio.com</a></li>
-        <li class="adress-contacts"><a href="tel:380961111111" class="header-tel">+380961111111</a></li>
+        <li class="adress-mail">
+          <a href="mailto:info@devstudio.com" class="header-mail" class="header-contacts">
+            <svg class="mailto">
+              <use href="./img/contatcs.svg#icon-envelope"></use>
+            </svg> info@devstudio.com
+          </a>
+        </li>
+        <li class="adress-contacts">
+          <a href="tel:380961111111" class="header-tel" class="header-contacts">
+            <svg class="telto">
+              <use href="./img/contatcs.svg#icon-Vector-1"></use>
+            </svg>+380961111111
+          </a>
+        </li>
       </ul>
     </div>
   </header>
@@ -57,37 +69,37 @@
                 <use href="./img/symbol-defs.svg#icon-antenna"></use>
               </svg>
             </div>
-           <h3 class="main-title">Внимание к деталям</h3>
+            <h3 class="main-title">Внимание к деталям</h3>
             <p class="main-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
           </li>
           <li class="main-about">
-                <div class="main-section-item">
-                  <svg class="main-section-icon" width="70" height="70">
-                    <use href="./img/symbol-defs.svg#icon-clock-1"></use>
-                  </svg>
-                </div>
+            <div class="main-section-item">
+              <svg class="main-section-icon" width="70" height="70">
+                <use href="./img/symbol-defs.svg#icon-clock-1"></use>
+              </svg>
+            </div>
             <h3 class="main-title">Пунктуальность</h3>
 
             <p class="main-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
 
           </li>
           <li class="main-about">
-                <div class="main-section-item">
-                  <svg class="main-section-icon" width="70" height="70">
-                    <use href="./img/symbol-defs.svg#icon-copmuter"></use>
-                  </svg>
-                </div>
+            <div class="main-section-item">
+              <svg class="main-section-icon" width="70" height="70">
+                <use href="./img/symbol-defs.svg#icon-copmuter"></use>
+              </svg>
+            </div>
             <h3 class="main-title">Планирование</h3>
             <p class="main-text">
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
           <li class="main-about">
-                <div class="main-section-item">
-                  <svg class="main-section-icon" width="70" height="70">
-                    <use href="./img/symbol-defs.svg#icon-astronaut-1"></use>
-                  </svg>
-                </div>
+            <div class="main-section-item">
+              <svg class="main-section-icon" width="70" height="70">
+                <use href="./img/symbol-defs.svg#icon-astronaut-1"></use>
+              </svg>
+            </div>
             <h3 class="main-title">Современные технологии</h3>
             <p class="main-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
@@ -147,19 +159,61 @@
 
   <!-- footer -->
   <footer class="footer-main">
-    <div class="container footer-container">
-      <a href="./index.html" class="footer-logo-web">Web<span class="footer-logo-studio">Studio</span> </a>
-      <address>
-        <ul class="adress-link list">
-          <li class="adress-maps"><a href="http://goo.gl/maps/Mw3FFrCsqpgqJeCP6" target="_blank" class="adress-text"
-              rel="noopener noreferreг">
-              г. Киев, пр-т Леси Украинки, 26г
-            </a></li>
-          <li class="footer-adress"><a href="mailto:info@devstudio.com" class="footer-mail">info@devstudio.com</a></li>
-          <li class="footer-adress"><a href="tel:380961111111" class="footer-tel">+380961111111</a></li>
-        </ul>
-      </address>
-    </div>
+    <section class="container footer-block">
+      <div class="container footer-container">
+        <a href="./index.html" class="footer-logo-web">Web<span class="footer-logo-studio">Studio</span> </a>
+        <address>
+          <ul class="adress-link list">
+            <li class="adress-maps"><a href="http://goo.gl/maps/Mw3FFrCsqpgqJeCP6" target="_blank" class="adress-text"
+                rel="noopener noreferreг">
+                г. Киев, пр-т Леси Украинки, 26г
+              </a></li>
+            <li class="footer-adress"><a href="mailto:info@devstudio.com" class="footer-mail">info@devstudio.com</a>
+            </li>
+            <li class="footer-adress"><a href="tel:380961111111" class="footer-tel">+380961111111</a></li>
+          </ul>
+          <div class="footer-soc">
+            <h2 class="footer-join">присоединятейсь</h2>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a href="" class="footer-social-link">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./img/icons.svg#шcon-instagram-2-1">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="footer-social-item">
+                <a href="" class="footer-social-link">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./img/icons.svg#icon-twitter-1-1">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="footer-social-item">
+                <a href="" class="footer-social-link">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./img/icons.svg#шcon-facebook-1-1">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="footer-social-item">
+                <a href="" class="footer-social-link">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./img/icons.svg#icon-linkedin-1-1">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+        </address>
+      </div>
+    </section>
   </footer>
 </body>
 
