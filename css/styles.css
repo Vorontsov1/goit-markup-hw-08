@@ -458,6 +458,7 @@
      text-align: center;
      letter-spacing: 0.03em;
      color: var(--primary-text-color);
+     margin-bottom: 10px;
  }
 
  .pic-text {
@@ -466,14 +467,12 @@
      line-height: 1.17;
      letter-spacing: 0.03em;
      color: var(--secondary-text-color);
-     padding-top: 10px;
-     padding-bottom: 16px;
+     margin-bottom: 16px;
  }
 
  .team-social-list {
-     display: inline-flex;
+     display: flex;
      justify-content: center;
-     margin-left: 32px;
  }
 
  .team-social-list:not(:last-child) {
