@@ -122,14 +122,16 @@
      display: flex;
      margin-left: auto;
  }
-.adress-mail{
-    display: flex;
-    align-items: center;
-}
-.adress-contacts{
-    display: flex;
-    align-items: center;
-}
+
+ .adress-mail {
+     display: flex;
+     align-items: center;
+ }
+
+ .adress-contacts {
+     display: flex;
+     align-items: center;
+ }
 
  .adress-contacts:not(:last-child) {
      margin-left: 50px;
@@ -188,7 +190,7 @@
      padding-top: 30px;
      padding-bottom: 30px;
      display: flex;
-     align-items:center;
+     align-items: center;
  }
 
  .header-mail:hover,
@@ -400,8 +402,8 @@
      background-color: var(--primary-whyte-color);
      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
      border-radius: 0px 0px 4px 4px;
-    /* padding-left: 32px; */
-    /* padding-right: 32px; */
+     /* padding-left: 32px; */
+     /* padding-right: 32px; */
  }
 
 
@@ -505,12 +507,23 @@
      color: var(--primary-whyte-color);
  }
 
- .team-social-item+.team-social-item{
+ .team-social-item+.team-social-item {
      margin-left: 10px;
  }
- 
+
 
  /* ----------------our clients----------------- */
+
+
+ .top-text {
+     font-weight: 700;
+     font-size: 36px;
+     line-height: 1.16;
+     text-align: center;
+     letter-spacing: 0.03em;
+     color: var(--primary-text-color);
+ }
+
 
  .clients-title {
      margin-bottom: 50px;
@@ -539,28 +552,20 @@
      justify-content: center;
      color: var(--social-icon-color);
      border: 1px solid var(--social-icon-color);
-     border-radius: 6px;
+     border-radius: 4px;
  }
 
  .clients-icon {
      fill: currentColor;
  }
 
-
- .top-text {
-     font-weight: 700;
-     font-size: 36px;
-     line-height: 1.16;
-     text-align: center;
-     letter-spacing: 0.03em;
-     color: var(--primary-text-color);
- }
-
  .clients-link:hover,
- .clients-link:focus {
-     background-color: var(--accent-text-color);
-     color:var(--accent-text-color);
+ .clinents-link:focus {
+     fill: var(--accent-text-color);
+     border-color: var(--accent-text-color);
  }
+
+
 
  /*------------------ footer ---------------*/
 
