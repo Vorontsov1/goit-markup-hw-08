@@ -560,7 +560,7 @@
  }
 
  .clients-link:hover,
- .clinents-link:focus {
+ .clients-link:focus {
      fill: var(--accent-text-color);
      border-color: var(--accent-text-color);
  }
