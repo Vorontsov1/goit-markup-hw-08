@@ -750,8 +750,18 @@
      border: 1px solid rgba(255, 255, 255, 0.3);
      border-radius: 4px;
      background-color: transparent;
+     color: var(--primary-whyte-color);
      cursor: pointer;
  }
+ .subscr
+    :hover,
+    :focus
+    {
+        outline:var(--secondary-text-color);
+    }
+ 
+
+ 
 
  .submit-btn {
      width: 200px;
@@ -773,7 +783,7 @@
      color: #FFFFFF;
      cursor: pointer;
      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .submit-btn:hover,
@@ -983,10 +993,18 @@
      display: flex;
      align-items: center;
      justify-content: center;
+     color:var(--secondary-text-color);
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .close-icon
+ {
+    fill: currentColor;
  }
 
  .modal-close:hover {
-     fill: var(--accent-text-color);
+     color: var(--accent-text-color);
  }
 
 
