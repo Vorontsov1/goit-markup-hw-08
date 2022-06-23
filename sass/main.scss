@@ -1,5 +1,24 @@
-body
-{
-    background-color: aqua;
-}
+@import "./components/section";
+@import "./components/container";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/main";
+@import "./layout/work";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/subscribe";
+@import "./layout/cards";
+@import "./layout/modal";
+
+@import "./utils/vars";
+
+@import "./base/reset";
+// @import "./base/normalize";
+@import "./base/commons";
+@import "./utils/hidden";
+
+
+
 
