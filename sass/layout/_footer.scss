@@ -1,5 +1,5 @@
 .footer {
-    background: var(--footer-background-color);
+    background: $footer-background-color;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -9,47 +9,42 @@
 
     &-logo {
         font-family: Raleway;
+        @include font(26px, 700, null, null);
         font-style: normal;
-        font-weight: 700;
-        font-size: 26px;
         display: block;
         margin-bottom: 20px;
     }
 
     &-contact {
         font-style: normal;
-        font-size: 14px;
-        line-height: 1.71px;
-        letter-spacing: 0.03em;
-        color: var(--primary-whyte-color);
+        @include font(14px, null, 1.71, 0.03em);
+        color: $primary-whyte-color;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus {
-            color: var(--accent-text-color);
+            color: $accent-text-color;
         }
     }
 
     &-logo-web {
-        color: var(--accent-text-color);
+        color: $accent-text-color;
     }
 
     &-logo-studio {
-        color: var(--primary-whyte-color);
+        color: $primary-whyte-color;
     }
 
     &-mail,
     &-tel {
         font-style: normal;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.03em;
-        color: var(--address-footer-color);
+        @include font(14px, null, 1.71, 0.03em);
+        color: $address-footer-color;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus {
-            color: var(--accent-text-color);
+            color: $accent-text-color;
         }
     }
 }
