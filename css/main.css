@@ -474,12 +474,11 @@
       -ms-flex-align: center;
           align-items: center;
 }
-
-.clients-item {
+.clients-list__item {
   width: 170px;
   height: 92px;
 }
-.clients-item + .clients-item {
+.clients-list__item + .clients-list__item {
   margin-left: 30px;
 }
 
