@@ -3,10 +3,9 @@
 }
 
 .clients-list {
-    display: flex;
+    @extend %align-list;
     justify-content: center;
-    align-items: center;
-
+    
     &__item {
         width: 170px;
         height: 92px;
