@@ -25,127 +25,166 @@
     transform: translate(-50%, -50%) scale(1) rotate(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px;
-}
 
-.modal-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-    margin-bottom: 12px;
+    &-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+        margin-bottom: 12px;
 
-}
-
-.modal-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.modal-close {
-    width: 30px;
-    height: 30px;
-    background-color: var(--primary-whyte-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    position: absolute;
-    top: 7px;
-    right: 8px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--secondary-text-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-        color: var(--accent-text-color);
     }
-}
 
+    &-form {
+        display: flex;
+        flex-direction: column;
+    }
 
-.close-icon {
-    fill: currentColor;
-}
-
-
-
-.modal-field {
-    margin-bottom: 10px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:focus-within .modal-input,
-    &:hover .modal-input {
-        border: 1px solid var(--accent-text-color);
+    &-close {
+        width: 30px;
+        height: 30px;
+        background-color: var(--primary-whyte-color);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        position: absolute;
+        top: 7px;
+        right: 8px;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--secondary-text-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            color: var(--accent-text-color);
+        }
     }
 
-    &:focus-within .input-icon,
-    &:hover .input-icon {
+    &-icon {
+        fill: currentColor;
+    }
+
+    &-field {
+        margin-bottom: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:focus-within .modal-input,
+        &:hover .modal-input {
+            border: 1px solid var(--accent-text-color);
+            cursor: pointer;
+        }
+
+        &:focus-within .input-icon,
+        &:hover .input-icon {
+            fill: var(--accent-text-color);
+        }
+    }
+
+    &-input {
+        width: 100%;
+        height: 40px;
+        display: block;
+        padding-left: 42px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:focus {
+            outline: none;
+            border-color: var(--accent-text-color);
+        }
+
+        &:focus+.input-icon {
+            fill: var(--accent-text-color);
+        }
+    }
+
+    &-input-label {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        margin-top: 10px;
+        color: var(--secondary-text-color);
+
+    }
+
+    &-form-field {
+        margin-bottom: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:focus-within .modal-text,
+        &:hover .modal-text {
+            border: 1px solid var(--accent-text-color);
+            fill: var(--accent-text-color);
+            cursor: pointer;
+        }
+    }
+
+    &-input-wrap {
+        display: block;
+        position: relative;
+        margin-top: 4px;
+    }
+
+    &-input:focus+.input-icon {
         fill: var(--accent-text-color);
     }
-}
 
-.modal-input {
-    width: 100%;
-    height: 40px;
-    display: block;
-    padding-left: 42px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:focus {
-        outline: none;
-        border-color: var(--accent-text-color);
+    &-input-label {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: var(--secondary-text-color);
     }
 
-    &:focus+.input-icon {
-        fill: var(--accent-text-color);
+    &-text {
+        font-style: normal;
+        font-weight: normal;
+        width: 100%;
+        height: 120px;
+        font-style: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.78, 0.73);
+        margin-top: 4px;
+        resize: none;
+        padding: 12px 16px;
+
+        &::placeholder {
+            font-style: normal;
+            font-weight: normal;
+            font-style: 12px;
+            line-height: 1.16;
+            letter-spacing: 0.01;
+            color: rgba(117, 117, 117, 0.5);
+        }
+
+        &:focus {
+            outline: none;
+            border-color: var(--accent-text-color)
+        }
+
+        &:focus {
+            border-color: var(--accent-text-color);
+        }
     }
-}
 
-
-
-
-.modal-input-label {
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    margin-top: 10px;
-    color: var(--secondary-text-color);
-
-}
-
-
-
-.modal-form-field {
-    margin-bottom: 10px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form-field:focus-within .modal-text,
-.modal-form-field:hover .modal-text {
-    border: 1px solid var(--accent-text-color);
-    fill: var(--accent-text-color);
-    cursor: pointer;
-}
-
-.modal-input-wrap {
-    display: block;
-    position: relative;
-    margin-top: 4px;
 }
 
 .input-icon {
@@ -160,52 +199,6 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.78, 0.73);
 
 }
-
-.modal-input:focus+.input-icon {
-    fill: var(--accent-text-color);
-}
-
-
-
-.modal-input-label {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: var(--secondary-text-color);
-}
-
-.modal-text {
-    font-style: normal;
-    font-weight: normal;
-    width: 100%;
-    height: 120px;
-    font-style: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.78, 0.73);
-    margin-top: 4px;
-    resize: none;
-    padding: 12px 16px;
-    &::placeholder {
-    font-style: normal;
-    font-weight: normal;
-    font-style: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01;
-    color: rgba(117, 117, 117, 0.5);
-  }
-    &:focus {
-    outline: none;
-    border-color: var(--accent-text-color)
-  }
-    &:focus {
-      border-color: var(--accent-text-color);
-  }
- }
-
 
 .modal-button {
     width: 200px;
@@ -252,11 +245,12 @@
     border-radius: 4px;
     box-shadow: 0px, 4px, 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+
     &:hover,
     &:focus {
-    background-color: #188CE8;
-  }
- }
+        background-color: #188CE8;
+    }
+}
 
 .modal-btn-field {
     display: flex;
@@ -279,17 +273,19 @@
     justify-content: center;
     margin-right: 5px;
     cursor: pointer;
+
+    &-link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--accent-text-color);
+        border-bottom: 1px solid var(--accent-text-color);
+    }
 }
 
-.check-text-link {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--accent-text-color);
-    border-bottom: 1px solid var(--accent-text-color);
-}
+
 
 .check-box {
     width: 16px;
