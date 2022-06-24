@@ -30,8 +30,7 @@
 }
 
 .work-img-title {
-    display: flex;
-    align-items: center;
+    @extend %align-list;
     justify-content: center;
     position: absolute;
     font-weight: 700;

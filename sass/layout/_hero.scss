@@ -37,8 +37,7 @@
     height: 120px;
     background-color: #f5f4fa;
     border-radius: 4px;
-    display: flex;
-    align-items: center;
+    @extend %align-list;
     justify-content: center;
     margin-bottom: 30px;
 }

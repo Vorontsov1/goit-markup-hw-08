@@ -23,8 +23,7 @@
 }
 
 .header-nav {
-    display: flex;
-    align-items: center;
+@extend %align-list;
 }
 
 .adress-list {
@@ -33,13 +32,11 @@
 }
 
 .adress-mail {
-    display: flex;
-    align-items: center;
+@extend %align-list;
 }
 
 .adress-contacts {
-    display: flex;
-    align-items: center;
+@extend %align-list;
 
     &:not(:last-child) {
         margin-left: 50px;
@@ -50,14 +47,12 @@
 
 
 .contacts {
-    display: flex;
-    align-items: center;
+    @extend %align-list;
 }
 
 
 .header-list {
-    display: flex;
-    align-items: center;
+    @extend %align-list;
 }
 
 .header-link {
@@ -108,8 +103,7 @@
     letter-spacing: 0.02em;
     padding-top: 30px;
     padding-bottom: 30px;
-    display: flex;
-    align-items: center;
+    @extend %align-list;
 }
 
 .header-contacts {

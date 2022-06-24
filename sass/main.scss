@@ -3,6 +3,9 @@
 @import "./components/btn";
 @import "./components/top-text";
 
+@import "./utils/placeholder";
+@import "./utils/vars";
+
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/main";
@@ -14,7 +17,7 @@
 @import "./layout/cards";
 @import "./layout/modal";
 
-@import "./utils/vars";
+
 
 @import "./base/reset";
 // @import "./base/normalize";
