@@ -9,11 +9,8 @@
 }
 
 .section-item {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: var(--title-black-color);
+    @include font(36px, 700, 1.17, 0.03em);
+    color: $title-black-color;
 }
 
 .section-pic {
@@ -23,22 +20,21 @@
 
 .pic-with:not(:last-child) {
     margin-right: 30px;
+    & {
+            position: relative;
+        }
 }
 
-.pic-with {
-    position: relative;
-}
+
 
 .work-img-title {
     @extend %align-list;
     justify-content: center;
     position: absolute;
-    font-weight: 700;
-    line-height: 1.4;
+    @include font(null, 700, 1.4, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary-whyte-color);
+    color: $primary-whyte-color;
     bottom: 0;
     left: 0;
     background-color: rgba(47, 48, 58, 0.8);
