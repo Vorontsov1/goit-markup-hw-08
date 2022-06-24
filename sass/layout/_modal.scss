@@ -16,7 +16,7 @@
 .modal {
     width: 528px;
     min-height: 581px;
-    background-color: var(--primary-whyte-color);
+    background-color: $primary-whyte-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     position: absolute;
@@ -27,11 +27,8 @@
     padding: 40px;
 
     &-title {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
+        @include font(20px, 700, 1.15, 0.03em);
         text-align: center;
-        letter-spacing: 0.03em;
         color: var(--primary-text-color);
         margin-bottom: 12px;
 
@@ -45,22 +42,21 @@
     &-close {
         width: 30px;
         height: 30px;
-        background-color: var(--primary-whyte-color);
+        background-color: $primary-whyte-color;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 50%;
         position: absolute;
         top: 7px;
         right: 8px;
         cursor: pointer;
-        display: flex;
-        align-items: center;
+        @extend %align-list;
         justify-content: center;
-        color: var(--secondary-text-color);
+        color: $secondary-text-color;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
             background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover {
-            color: var(--accent-text-color);
+            color: $accent-text-color;
         }
     }
 
@@ -78,13 +74,13 @@
 
         &:focus-within .modal-input,
         &:hover .modal-input {
-            border: 1px solid var(--accent-text-color);
+            border: 1px solid $accent-text-color;
             cursor: pointer;
         }
 
         &:focus-within .input-icon,
         &:hover .input-icon {
-            fill: var(--accent-text-color);
+            fill: $accent-text-color;
         }
     }
 
@@ -99,21 +95,18 @@
 
         &:focus {
             outline: none;
-            border-color: var(--accent-text-color);
+            border-color: $accent-text-color;
         }
 
         &:focus+.input-icon {
-            fill: var(--accent-text-color);
+            fill: $accent-text-color;
         }
     }
 
     &-input-label {
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 1.16;
-        letter-spacing: 0.01em;
+        @include font(12px, normal, 1.16, 0.01em);
         margin-top: 10px;
-        color: var(--secondary-text-color);
+        color: $secondary-text-color;
 
     }
 
@@ -127,8 +120,8 @@
 
         &:focus-within .modal-text,
         &:hover .modal-text {
-            border: 1px solid var(--accent-text-color);
-            fill: var(--accent-text-color);
+            border: 1px solid $accent-text-color;
+            fill: $accent-text-color;
             cursor: pointer;
         }
     }
@@ -140,25 +133,19 @@
     }
 
     &-input:focus+.input-icon {
-        fill: var(--accent-text-color);
+        fill: $accent-text-color;
     }
 
     &-input-label {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        letter-spacing: 0.01em;
-        color: var(--secondary-text-color);
+        @include font(12px, 400, 1.16, 0.01em);
+        color: $secondary-text-color;
     }
 
     &-text {
+        @include font(12px, normal, 1.16, 0.01em);
         font-style: normal;
-        font-weight: normal;
         width: 100%;
         height: 120px;
-        font-style: 12px;
-        line-height: 1.16;
-        letter-spacing: 0.01;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.78, 0.73);
@@ -168,20 +155,17 @@
 
         &::placeholder {
             font-style: normal;
-            font-weight: normal;
-            font-style: 12px;
-            line-height: 1.16;
-            letter-spacing: 0.01;
+            @include font(12px, normal, 1.16, 0.01em);
             color: rgba(117, 117, 117, 0.5);
         }
 
         &:focus {
             outline: none;
-            border-color: var(--accent-text-color)
+            border-color: $accent-text-color
         }
 
         &:focus {
-            border-color: var(--accent-text-color);
+            border-color: $accent-text-color;
         }
     }
 
@@ -195,7 +179,7 @@
     width: 18px;
     height: 18px;
     transform: translateY(-50%);
-    fill: var(--primary-text-color);
+    fill: $primary-text-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.78, 0.73);
 
 }
@@ -205,18 +189,15 @@
     height: 50px;
     left: 700px;
     top: 712px;
-    background: var(--second-accent-text-color);
+    background: $second-accent-text-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    @include font(16px, 700, 1.88, 0.06em);
     display: block;
     border: none;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--primary-whyte-color);
+    color: $primary-whyte-color;
 }
 
 .modal-btn-field {
@@ -235,11 +216,8 @@
     display: block;
     width: 200px;
     height: 50px;
-    letter-spacing: 0.06em;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    background-color: var(--accent-text-color);
+    @include font(16px, 700, 1.88, 0.06em);
+    background-color: $accent-text-color;
     color: #ffffff;
     border: none;
     border-radius: 4px;
@@ -262,25 +240,18 @@
 }
 
 .check-text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    @include font(14px, normal, 1.71, 0.03em);
+    color: $secondary-text-color;
     @extend %align-list;
     justify-content: center;
     margin-right: 5px;
     cursor: pointer;
 
     &-link {
+        @include font(14px, 400, 1.71, 0.03em);
         font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: var(--accent-text-color);
-        border-bottom: 1px solid var(--accent-text-color);
+        color: $accent-text-color;
+        border-bottom: 1px solid $accent-text-color;
     }
 }
 
@@ -289,7 +260,7 @@
 .check-box {
     width: 16px;
     height: 15px;
-    border: 2px solid var(--primary-text-color);
+    border: 2px solid $primary-text-color;
     border-radius: 4px;
     box-shadow: 0px, 4px, 4px rgba(0, 0, 0, 0.25);
     @extend %align-list;
@@ -302,10 +273,10 @@
 }
 
 .modal-check:checked+.check-text span.check-box {
-    background-color: var(--accent-text-color);
+    background-color: $accent-text-color;
     border: none;
 }
 
 .modal-check:checked+.check-text .check-icon {
-    fill: var(--primary-whyte-color);
+    fill: $primary-whyte-color;
 }
