@@ -19,21 +19,15 @@
 }
 
 .main-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    @include font(14px, 700, 1.15, 0.03em);
+    color: $primary-text-color;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
 .main-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    @include font(14px, 400, 1.71, 0.03em);
+    color: $secondary-text-color;
     margin-bottom: 0;
     margin-top: 0;
 }
