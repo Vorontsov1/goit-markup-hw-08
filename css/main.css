@@ -933,8 +933,7 @@
   -webkit-transition: opacity 250ms, visibility 250ms;
   transition: opacity 250ms, visibility 250ms;
 }
-
-.is-hidden .modal {
+.backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(2) rotate(180deg);
           transform: translate(-50%, -50%) scale(2) rotate(180deg);
 }
@@ -1001,13 +1000,12 @@
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-close:hover {
+  color: var(--accent-text-color);
+}
 
 .close-icon {
   fill: currentColor;
-}
-
-.modal-close:hover {
-  color: var(--accent-text-color);
 }
 
 .modal-field {
@@ -1024,15 +1022,11 @@
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-field:focus-within .modal-input,
-.modal-field:hover .modal-input {
+.modal-field:focus-within .modal-input, .modal-field:hover .modal-input {
   border: 1px solid var(--accent-text-color);
   cursor: pointer;
 }
-
-.modal-filed:focus-within .input-icon,
-.modal-field:hover .input-icon {
+.modal-field:focus-within .input-icon, .modal-field:hover .input-icon {
   fill: var(--accent-text-color);
 }
 
@@ -1046,18 +1040,12 @@
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-input:focus {
   outline: none;
   border-color: var(--accent-text-color);
 }
-
 .modal-input:focus + .input-icon {
   fill: var(--accent-text-color);
-}
-
-.modal-text:focus {
-  border-color: var(--accent-text-color);
 }
 
 .modal-input-label {
@@ -1141,7 +1129,6 @@
   resize: none;
   padding: 12px 16px;
 }
-
 .modal-text::-webkit-input-placeholder {
   font-style: normal;
   font-weight: normal;
@@ -1150,7 +1137,6 @@
   letter-spacing: 0.01;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-text::-moz-placeholder {
   font-style: normal;
   font-weight: normal;
@@ -1159,7 +1145,6 @@
   letter-spacing: 0.01;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-text:-ms-input-placeholder {
   font-style: normal;
   font-weight: normal;
@@ -1168,7 +1153,6 @@
   letter-spacing: 0.01;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-text::-ms-input-placeholder {
   font-style: normal;
   font-weight: normal;
@@ -1177,7 +1161,6 @@
   letter-spacing: 0.01;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-text::placeholder {
   font-style: normal;
   font-weight: normal;
@@ -1186,9 +1169,11 @@
   letter-spacing: 0.01;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-text:focus {
   outline: none;
+  border-color: var(--accent-text-color);
+}
+.modal-text:focus {
   border-color: var(--accent-text-color);
 }
 
@@ -1245,9 +1230,7 @@
           box-shadow: 0px, 4px, 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
-
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover, .modal-btn:focus {
   background-color: #188CE8;
 }
 
