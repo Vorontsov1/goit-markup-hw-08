@@ -72,7 +72,7 @@
 }
 
 .portfolio-item {
-    @include font(16px, 600, 1.62, 0, 03em);
+    @include font(16px, 600, 1.62, 0.03em);
     background-color: $primary-whyte-color;
     border-radius: 4px;
     color: $title-black-color;
