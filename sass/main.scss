@@ -1,6 +1,7 @@
 @import "./utils/mixin";
 @import "./utils/placeholder";
 @import "./utils/vars";
+@import "./utils/hidden";
 
 @import "./components/section";
 @import "./components/container";
@@ -24,9 +25,8 @@
 
 
 @import "./base/reset";
-// @import "./base/normalize";
 @import "./base/commons";
-@import "./utils/hidden";
+
 
 
 
