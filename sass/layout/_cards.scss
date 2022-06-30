@@ -5,7 +5,7 @@
 }
 
 .pictures-item {
-   @include font (18px, null, 2, 0.06em);
+    @include font (18px, null, 2, 0.06em);
     color: $primary-text-color;
 }
 
@@ -22,11 +22,32 @@
 }
 
 .setup {
+    position: relative;
     flex-basis: calc((100% - 3 * 30px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
-    }
+}
 
+.project-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    @include font (18px, 400, 1.56, 0.03em);
+    color: $primary-whyte-color;
+    background: rgba(33, 150, 243, 0.9);
+    height: 100%;
+    padding: 63px 24px;
+    transform: translateY(100%);
+    transition: transform 250ms;
+}
+.setup-item-wrap {
+    position: relative;
+    overflow: hidden;
+}
+.setup:hover.project-text {
+    transform: translateY(0);
+}
 
 .portfolio-item {
     padding-left: 24px;
@@ -44,8 +65,9 @@
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
             1px 4px 6px rgba(0, 0, 0, 0.16);
     }
-    &:hover.project-text,
-    &:focus.project-text{
+
+    &:hover .project-text,
+    &:focus .project-text {
         transform: translateY(0);
     }
 }
@@ -53,29 +75,16 @@
 
 
 
-.setup-item-wrap {
-    position: relative;
-    overflow: hidden;
-}
 
-.project-text {
-    @include font (18px, 400, 1.56, 0.03em);
-    color: $primary-whyte-color;
-    background: rgba(33, 150, 243, 0.9);
-    height: 100%;
-    padding: 63px 24px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translateY(100%);
-    transition: transform 250ms;
-}
+
+
+
 
 .portfolio-item {
     @include font(16px, 600, 1.62, 0.03em);
     background-color: $primary-whyte-color;
     border-radius: 4px;
-    color: $title-black-color;
+    color: $primary-black-color;
 
     & {
         cursor: pointer;
