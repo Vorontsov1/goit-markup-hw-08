@@ -18,11 +18,13 @@
     margin-top: 50px;
 }
 
-.pic-with:not(:last-child) {
-    margin-right: 30px;
-    & {
-            position: relative;
-        }
+.pic-with {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+    flex-basis: calc(100% / 3 - 30px);
+    position: relative;
+    @extend %align-list;
 }
 
 

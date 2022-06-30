@@ -1,4 +1,4 @@
-.check-box, .check-text, .modal-close, .submit-btn, .footer-social-link, .clients-link, .clients-list, .team-social-link, .team-pic, .work-img-title, .main-section-item, .header-mail, .header-list, .contacts, .adress-contacts, .adress-mail, .header-nav {
+.check-box, .check-text, .modal-close, .submit-btn, .footer-social-link, .clients-link, .clients-list, .team-social-link, .team-pic, .work-img-title, .pic-with, .main-section-item, .header-mail, .header-list, .contacts, .adress-contacts, .adress-mail, .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,11 +342,13 @@
   margin-top: 50px;
 }
 
-.pic-with:not(:last-child) {
-  margin-right: 30px;
+.pic-with {
+  -ms-flex-preferred-size: calc(33.3333333333% - 30px);
+      flex-basis: calc(33.3333333333% - 30px);
+  position: relative;
 }
 .pic-with:not(:last-child) {
-  position: relative;
+  margin-right: 30px;
 }
 
 .work-img-title {
