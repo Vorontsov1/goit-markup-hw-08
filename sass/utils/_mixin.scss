@@ -5,3 +5,19 @@
     letter-spacing: $ls;
 
 }
+
+@mixin mobile {
+    @media screen and (min-widht: 480px) {
+        @content;
+    }
+ }
+ @mixin tablet {
+     @media screen and (min-widht: 768px) {
+         @content;
+     }
+ }
+ @mixin desktop {
+     @media screen and (min-widht: 1200px) {
+         @content;
+     }
+ }

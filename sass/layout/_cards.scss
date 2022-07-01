@@ -1,3 +1,7 @@
+.main-content{
+    display: block;
+}
+
 .portfolio-set {
     padding: 20px 24px;
     border: 1px solid #eeeeee;
@@ -17,15 +21,17 @@
 .card-set {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    gap: 30px;
+    // margin-right: -30px;
+    // margin-bottom: -30px;
 }
 
 .setup {
-    position: relative;
-    flex-basis: calc((100% - 3 * 30px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    width: 100%;
+    // position: relative;
+    // flex-basis: calc((100% - 3 * 30px) / 3);
+    // margin-right: 30px;
+    // margin-bottom: 30px;
 }
 
 .project-text {
@@ -71,14 +77,6 @@
         transform: translateY(0);
     }
 }
-
-
-
-
-
-
-
-
 
 .portfolio-item {
     @include font(16px, 600, 1.62, 0.03em);
