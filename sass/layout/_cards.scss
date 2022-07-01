@@ -1,23 +1,6 @@
 .main-content{
     display: block;
 }
-
-.portfolio-set {
-    padding: 20px 24px;
-    border: 1px solid #eeeeee;
-    border-top: none;
-}
-
-.pictures-item {
-    @include font (18px, null, 2, 0.06em);
-    color: $primary-text-color;
-}
-
-.pictures-text {
-    @include font (16px, null, 1.88, 0.03em);
-    color: $secondary-text-color;
-}
-
 .card-set {
     display: flex;
     flex-wrap: wrap;
@@ -27,12 +10,27 @@
 }
 
 .setup {
-    width: 100%;
-    // position: relative;
-    // flex-basis: calc((100% - 3 * 30px) / 3);
-    // margin-right: 30px;
-    // margin-bottom: 30px;
-}
+    @media screen and (min-widht:768px) {
+      flex-basis: calc(100% / 2 - 30px);
+  }
+    @media screen and (min-widht:1200px) {
+      flex-basis: calc(100% / 3 - 30px);
+        }
+ }
+ .portfolio-set {
+     padding: 20px 24px;
+     border: 1px solid #eeeeee;
+     border-top: none;
+     flex-grow: 1;
+ }
+
+ .pictures-item {
+     @include font (18px, null, 2, 0.06em);
+     color: $primary-text-color;
+     margin-bottom: 4px;
+ }
+
+ 
 
 .project-text {
     position: absolute;
