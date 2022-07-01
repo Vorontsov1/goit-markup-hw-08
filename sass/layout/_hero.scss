@@ -75,6 +75,10 @@
         @include font(26px, 900, 1.62, 0.06em);
         color: $primary-whyte-color;
 
+        @media screen and (max-width:1199px) {
+            max-width: 360px;
+        }
+
         @media screen and(min-width: 1200px) {
             max-width: 696px;
             font-size: 44px;

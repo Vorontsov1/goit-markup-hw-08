@@ -487,6 +487,11 @@
   letter-spacing: 0.06em;
   color: #ffffff;
 }
+@media screen and (max-width: 1199px) {
+  .hero .hero-title {
+    max-width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero .hero-title {
     max-width: 696px;
