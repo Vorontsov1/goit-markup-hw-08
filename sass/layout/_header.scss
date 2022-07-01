@@ -144,17 +144,44 @@
     height: 100%;
 }
 
-.mob-connect {
+.mob-menu-botttom {
     margin-top: auto;
+}
+.menu-open__btn {
+    width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        transition: fill $effects-option;
+    
+        &:hover,
+        &:focus {
+            fill: $button-hover-color;
+        }
+    
+        @media screen and (min-width: 786px) {
+            display: none;
+        }
+}
+
+.menu-close__btn {
+    width: 40px;
+        height: 40px;
+        @extend %align-list;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        border: none;
+        border-radius: 50%;
+        background-color: transparent;
 }
 
 .menu-open__btn,
 .menu-close__btn {
     display: block;
     margin-left: auto;
+    cursor: pointer;
 }
-
-.mob-menu__top {}
 
 .close-menu__icon {
     fill: $secondary-text-color;
@@ -166,8 +193,13 @@
     }
 }
 
-.mob-menu__nav {}
+.open-menu__icon {
 
+    &:hover,
+    &:focus {
+        fill: $accent-text-color;
+    }
+}
 
 .mob-menu__item:not(:last-child) {
     margin-bottom: 30px;
@@ -215,12 +247,6 @@
         color: $accent-text-color;
     }
 }
-
-.mob-connect-tel {}
-
-.mob-connect-mail {}
-
-.list {}
 
 .mob-menu__socials {
     display: flex;

@@ -50,42 +50,41 @@
           <use href="./img/open-close.svg#icon-menu_24px"></use>
         </svg>
       </button>
-      <div class="mob-menu" data-menu>
-          <div class="mob-menu__wrap">
-            <div class="mob-menu__top">
-              <button type="button" class="menu-close__btn" data-menu-cloe>
-                <svg class="close-menu__icon" width="18" height="18">
-                  <use href="./img/open-close.svg#icon-close_24px"></use>
-                </svg>
-              </button>
-              <ul class="mob-menu__nav">
-                <li class="mob-menu__item"><a href="./index.html"
-                    class="link mob-menu__nav-link mob-menu__nav-link_current">Студия</a></li>
-                <li class="mob-menu__item"><a href="./portfolio.html" class="link mob-menu__nav-link">Портфолио</a></li>
-                <li class="mob-menu__item"><a href="" class="link mob-menu__nav-link">Контакты</a></li>
-              </ul>
-            </div>
-            <div class="mob-connect">
-              <ul class="list mob-menu__contacts-list">
-                <li class="mob-menu__contacts-item"><a href="tel:+380961111111"
-                    class="link mob-menu__contacts-mobile">+38 096 111 11
-                    11</a></li>
-                <li class="mob-menu__contacts-item"><a href="mailto:info@devstudio.com"
-                    class="link mob-menu__contacts-mail">info@devstudio.com</a></li>
-              </ul>
-
-              <ul class="list mob-menu__socials">
-                <li class="social__item"><a href="https://www.Instagram.com/" target="_blank" rel="noreferrer noopener"
-                    class="link mob-menu__social__link">Instagram</a></li>
-                <li class="social__item"><a href="https://www.Twitter.com/" target="_blank" rel="noreferrer noopener"
-                    class="link mob-menu__social__link">Twitter</a></li>
-                <li class="social__item"><a href="https://www.Facebook.com/" target="_blank" rel="noreferrer noopener"
-                    class="link mob-menu__social__link">Facebook</a></li>
-                <li class="social__item"><a href="https://www.Linkedin.com/" target="_blank" rel="noreferrer noopener"
-                    class="link mob-menu__social__link">LinkedIn</a></li>
-              </ul>
-            </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-menu__wrap">
+          <div class="mob-menu__top">
+            <button type="button" class="menu-close__btn" data-menu-close>
+              <svg class="close-menu__icon" width="18" height="18">
+                <use href="./img/open-close.svg#icon-close_24px"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu__nav">
+              <li class="mob-menu__item"><a href="./index.html"
+                  class="link mob-menu__nav-link mob-menu__nav-link_current">Студия</a></li>
+              <li class="mob-menu__item"><a href="./portfolio.html" class="link mob-menu__nav-link">Портфолио</a></li>
+              <li class="mob-menu__item"><a href="" class="link mob-menu__nav-link">Контакты</a></li>
+            </ul>
           </div>
+          <div class="mob-menu-botttom">
+            <ul class="list mob-menu__contacts-list">
+              <li class="mob-menu__contacts-item"><a href="tel:+380961111111" class="link mob-menu__contacts-mobile">+38
+                  096 111 11 11</a></li>
+              <li class="mob-menu__contacts-item"><a href="mailto:info@devstudio.com"
+                  class="link mob-menu__contacts-mail">info@devstudio.com</a></li>
+            </ul>
+
+            <ul class="list mob-menu__socials">
+              <li class="social__item"><a href="https://www.Instagram.com/" target="_blank" rel="noreferrer noopener"
+                  class="link mob-menu__social__link">Instagram</a></li>
+              <li class="social__item"><a href="https://www.Twitter.com/" target="_blank" rel="noreferrer noopener"
+                  class="link mob-menu__social__link">Twitter</a></li>
+              <li class="social__item"><a href="https://www.Facebook.com/" target="_blank" rel="noreferrer noopener"
+                  class="link mob-menu__social__link">Facebook</a></li>
+              <li class="social__item"><a href="https://www.Linkedin.com/" target="_blank" rel="noreferrer noopener"
+                  class="link mob-menu__social__link">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -537,13 +536,10 @@
         <div class="modal-btn-field">
           <button type="submit" class="modal-btn">Отправить</button>
         </div>
-
-
-
-
       </form>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

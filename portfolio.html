@@ -54,18 +54,19 @@
                 <use href="./img/open-close.svg#icon-menu_24px"></use>
             </svg>
         </button>
-        <div class="mob-menu" data-menu>
+        <div class="mob-menu is-hidden" data-menu>
             <div class="mob-menu__wrap">
                 <div class="mob-menu__top">
-                    <button type="button" class="menu-close__btn" data-menu-cloe>
+                    <button type="button" class="menu-close__btn" data-menu-close>
                         <svg class="close-menu__icon" width="18" height="18">
                             <use href="./img/open-close.svg#icon-close_24px"></use>
                         </svg>
                     </button>
                     <ul class="mob-menu__nav">
                         <li class="mob-menu__item"><a href="./index.html"
-                                class="link mob-menu__nav-link mob-menu__nav-link">Студия</a></li>
-                        <li class="mob-menu__item"><a href="./portfolio.html" class="link mob-menu__nav-link mob-menu__nav-link_current">Портфолио</a></li>
+                                class="link mob-menu__nav-link">Студия</a></li>
+                        <li class="mob-menu__item"><a href="./portfolio.html"
+                                class="link mob-menu__nav-link mob-menu__nav-link_current">Портфолио</a></li>
                         <li class="mob-menu__item"><a href="" class="link mob-menu__nav-link">Контакты</a></li>
                     </ul>
                 </div>
@@ -77,16 +78,16 @@
                         <li class="mob-menu__contacts-item"><a href="mailto:info@devstudio.com"
                                 class="link mob-menu__contacts-mail">info@devstudio.com</a></li>
                     </ul>
-        
+
                     <ul class="list mob-menu__socials">
-                        <li class="social__item"><a href="https://www.Instagram.com/" target="_blank" rel="noreferrer noopener"
-                                class="link mob-menu__social__link">Instagram</a></li>
-                        <li class="social__item"><a href="https://www.Twitter.com/" target="_blank" rel="noreferrer noopener"
-                                class="link mob-menu__social__link">Twitter</a></li>
-                        <li class="social__item"><a href="https://www.Facebook.com/" target="_blank" rel="noreferrer noopener"
-                                class="link mob-menu__social__link">Facebook</a></li>
-                        <li class="social__item"><a href="https://www.Linkedin.com/" target="_blank" rel="noreferrer noopener"
-                                class="link mob-menu__social__link">LinkedIn</a></li>
+                        <li class="social__item"><a href="https://www.Instagram.com/" target="_blank"
+                                rel="noreferrer noopener" class="link mob-menu__social__link">Instagram</a></li>
+                        <li class="social__item"><a href="https://www.Twitter.com/" target="_blank"
+                                rel="noreferrer noopener" class="link mob-menu__social__link">Twitter</a></li>
+                        <li class="social__item"><a href="https://www.Facebook.com/" target="_blank"
+                                rel="noreferrer noopener" class="link mob-menu__social__link">Facebook</a></li>
+                        <li class="social__item"><a href="https://www.Linkedin.com/" target="_blank"
+                                rel="noreferrer noopener" class="link mob-menu__social__link">LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
@@ -97,7 +98,7 @@
     <main class="main-content">
         <section class="section galery">
             <div class="container">
-                <h1 class="visually-hidden">hidden</h1> 
+                <h1 class="visually-hidden">hidden</h1>
                 <ul class="main-btn list">
                     <li class="btn"><button type="button" class="portfolio-btn">Все</button></li>
                     <li class="btn"><button type="button" class="portfolio-btn">Веб-сайты</button></li>
@@ -109,26 +110,27 @@
                 <ul class="card-set list">
                     <li class="setup">
                         <a href="" class="port-link link">
-                         <div class="setup-item-wrap">
-                            <picture>
-                            <source srcset="">
-                            <img class="setup-img" src="./img/img-1-min.jpg" alt="our people" width="370">
-                            <p class="project-text">
-                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                                Все это позволит посетителю
-                                получить исчерпывающие сведения о компании или частном лице.
-                            </p>
+                            <div class="setup-item-wrap">
+                                <picture>
+                                    <source srcset="">
+                                    <img class="setup-img" src="./img/img-1-min.jpg" alt="our people" width="370">
+                                    <p class="project-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю
+                                        получить исчерпывающие сведения о компании или частном лице.
+                                    </p>
                             </div>
-                            
+
                             <div class="portfolio-set border-img">
                                 <h2 class="pictures-item">Технокряк</h2>
                                 <p class="pictures-text">Веб-сайт</p>
-                             </div>
-                          
-                            </a>
-                       
-                              
-                        
+                            </div>
+
+                        </a>
+
+
+
                     </li>
                     <li class="setup">
                         <a href="" class="port-link link">
@@ -272,7 +274,7 @@
     </main>
 
     <!-- footer -->
-     <footer class="footer"> 
+    <footer class="footer">
         <div class="container footer-blocks">
             <div class="footer-left">
                 <a class="footer-logo link" href="./index.html"><span class="footer-logo-web">Web</span><span
@@ -319,23 +321,25 @@
                     </li>
                 </ul>
             </div>
-            <-- subscribe -->
-             <div class="subcr-wrap">
-                <form class="footer-form">
-                    <p class="form-title">Подпишитесь на рассылку</p>
-                    <div class="footer-input">
-                        <input type="text" minlength="2" name="email" class="subscr" id="email" required="required" placeholder="E-mail"
-                            autocomplete="off" />
-                        <button type="submit" class="submit-btn">Подписаться
-                            <svg class="submit-icon" width="25" height="25">
-                                <use href="./img/iconsend.svg#icon-icon-send"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div> -->
-    </footer> 
+           <!-- subcribe -->
+                <div class="subcr-wrap">
+                    <form class="footer-form">
+                        <p class="form-title">Подпишитесь на рассылку</p>
+                        <div class="footer-input">
+                            <input type="text" minlength="2" name="email" class="subscr" id="email" required="required"
+                                placeholder="E-mail" autocomplete="off" />
+                            <button type="submit" class="submit-btn">Подписаться
+                                <svg class="submit-icon" width="25" height="25">
+                                    <use href="./img/iconsend.svg#icon-icon-send"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

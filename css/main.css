@@ -1,4 +1,4 @@
-.check-box, .check-text, .modal-close, .submit-btn, .footer-social-link, .clients-link, .clients-list, .team-social-link, .team-pic, .work-img-title, .pic-with, .main-section-item, .header-mail, .header-list, .contacts, .adress-contacts, .adress-mail, .header-nav {
+.check-box, .check-text, .modal-close, .submit-btn, .footer-social-link, .clients-link, .clients-list, .team-social-link, .team-pic, .work-img-title, .pic-with, .main-section-item, .menu-close__btn, .header-mail, .header-list, .contacts, .adress-contacts, .adress-mail, .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,14 +289,43 @@
   height: 100%;
 }
 
-.mob-connect {
+.mob-menu-botttom {
   margin-top: auto;
+}
+
+.menu-open__btn {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-open__btn:hover, .menu-open__btn:focus {
+  fill: #188ce8;
+}
+@media screen and (min-width: 786px) {
+  .menu-open__btn {
+    display: none;
+  }
+}
+
+.menu-close__btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
 }
 
 .menu-open__btn,
 .menu-close__btn {
   display: block;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .close-menu__icon {
@@ -305,6 +334,10 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-menu__icon:hover, .close-menu__icon:focus {
+  fill: #2196F3;
+}
+
+.open-menu__icon:hover, .open-menu__icon:focus {
   fill: #2196F3;
 }
 
