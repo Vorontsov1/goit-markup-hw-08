@@ -20,7 +20,7 @@
 }
 
 .header-nav {
-@extend %align-list;
+    @extend %align-list;
 }
 
 .adress-list {
@@ -29,11 +29,11 @@
 }
 
 .adress-mail {
-@extend %align-list;
+    @extend %align-list;
 }
 
 .adress-contacts {
-@extend %align-list;
+    @extend %align-list;
 
     &:not(:last-child) {
         margin-left: 50px;
@@ -119,4 +119,131 @@
     vertical-align: middle;
     fill: currentColor;
     margin-right: 10px;
+}
+
+
+
+
+.mob-menu {
+    position: fixed;
+    z-index: 5;
+    inset: 0;
+    padding: 48px 40px;
+    background-color: $primary-whyte-color;
+    transition: $effects-option;
+
+    &.is-hidden {
+        transform: translateX(100%);
+    }
+}
+
+.mob-menu__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.mob-connect {
+    margin-top: auto;
+}
+
+.menu-open__btn,
+.menu-close__btn {
+    display: block;
+    margin-left: auto;
+}
+
+.mob-menu__top {}
+
+.close-menu__icon {
+    fill: $secondary-text-color;
+    transition: $effects-option;
+
+    &:hover,
+    &:focus {
+        fill: $accent-text-color;
+    }
+}
+
+.mob-menu__nav {}
+
+
+.mob-menu__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.mob-menu__nav-link {
+    @include font(40px, 500, null, 0.02em);
+    color: $primary-text-color;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &_current {
+        color: $accent-text-color;
+        transition: $effects-option;
+    }
+}
+
+.mob-menu__item-link-current {
+    color: $accent-text-color;
+}
+
+.mob-menu__contacts-list {
+    margin-bottom: 64px;
+}
+
+.mob-menu__contacts-item {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.mob-menu__contacts-mobile {
+    @include font(34px, 500, null, 0.02em);
+    color: $accent-text-color;
+}
+
+.mob-menu__contacts-mail {
+    @include font(24px, 500, null, 0.02em);
+    color: $secondary-text-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $accent-text-color;
+    }
+}
+
+.mob-connect-tel {}
+
+.mob-connect-mail {}
+
+.list {}
+
+.mob-menu__socials {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.social__item {
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+    &:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &:first-child {
+        padding-left: 0px;
+    }
+}
+
+.mob-menu__social__link {
+    @include font(18px, 500, 1.22, 0.02em);
+    color: $accent-text-color;
 }
