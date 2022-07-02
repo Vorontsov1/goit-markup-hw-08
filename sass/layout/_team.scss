@@ -1,3 +1,7 @@
+.our-team {
+    background: $secondary-background-color;
+}
+
 .team-text {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -6,18 +10,50 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-pic {
-    @extend %align-list;
-    margin-top: 50px;
-    justify-content: center;
+.team-head {
+    width: 100%;
 }
 
-.team-image:not(:last-child) {
-    margin-right: 30px;
-    width: calc(100% / 4);
+.team-pic {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
+}
+
+.team-image {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 2 - 30px);
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 0px;
+        flex-basis: calc(100% / 4 - 30px);
+    }
 }
+
+.team-name {
+    @include font(16px, 500, 1.18, 0.03em);
+    text-align: center;
+    color: $primary-text-color;
+    margin-bottom: 10px;
+}
+
+.pic-text {
+    text-align: center;
+    @include font(16px, null, 1.19, 0.03em);
+    color: $secondary-text-color;
+    margin-bottom: 16px;
+}
+
 
 .our-team list {
     width: 1600px;
@@ -27,9 +63,7 @@
     background: $secondary-background-color;
 }
 
-.our-team {
-    background: $secondary-background-color;
-}
+
 
 
 
@@ -40,19 +74,9 @@
 }
 
 
-.pic-item {
-    @include font(16px, 500, 1.19, 0.03em);
-    text-align: center;
-    color: $primary-text-color;
-    margin-bottom: 10px;
-}
 
-.pic-text {
-    text-align: center;
-    @include font(16px, null, 1.17, 0.03em);
-    color: $secondary-text-color;
-    margin-bottom: 16px;
-}
+
+
 
 .team-social-list {
     display: flex;
