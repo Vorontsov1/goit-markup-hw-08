@@ -1,4 +1,4 @@
-.check-box, .check-text, .modal-close, .submit-btn, .footer-social-link, .clients-link, .clients-list, .team-social-link, .work-img-title, .section-pic_item, .main-section-item, .menu-close__btn, .header-mail, .header-list, .contacts, .adress-contacts, .adress-mail, .header-nav {
+.check-box, .check-text, .modal-close, .submit-btn, .footer-social-link, .clients-link, .clients-list, .team-social-link, .work-img-title, .section-pic_item, .menu-close__btn, .header-mail, .header-list, .contacts, .adress-contacts, .adress-mail, .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,49 +531,68 @@
     width: calc((100% - 90px) / 4);
   }
 }
-
-.main-about + .main-about {
+.main-about .main-about + .main-about {
   margin-top: 30px;
 }
 @media screen and (min-widtg: 768px) {
-  .main-about + .main-about {
+  .main-about .main-about + .main-about {
     margin-top: 0;
   }
 }
 
 .main-section-item {
-  width: 100%;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
-
-.main-title {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  color: #212121;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 30px;
+@media screen and (min-widht: 768px) {
+  .main-section-item {
+    width: 354px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
-@media screen and (min-width: 768px) {
-  .main-title {
-    text-align: left;
+@media screen and (min-width: 1200px) {
+  .main-section-item {
+    width: 270px;
+    height: 120px;
   }
 }
 
+.main-title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 700;
+  line-height: 1.14;
+  color: #212121;
+}
+
 .main-text {
-  font-size: 14px;
-  font-weight: 400;
+  text-align: left;
+  font-size: 400;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: #757575;
-  margin-top: 10px;
 }
 
 .about-deal {
