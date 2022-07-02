@@ -1,44 +1,50 @@
+.about-deal {
+    display: none;
+    padding-top: 0px;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+.section-pic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.section-pic_item {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    flex-basis: calc(100% / 3 - 30px);
+    position: relative;
+    @extend %align-list;
+}
+
 .section-item.centered,
 .team-item.centered {
     text-align: center;
 }
 
-.about-deal {
-    padding-top: 47px;
-    padding-bottom: 94px;
-}
+
 
 .section-item {
     @include font(36px, 700, 1.17, 0.03em);
     color: $primary-black-color;
 }
 
-.section-pic {
-    display: flex;
-    margin-top: 50px;
-}
-
-.pic-with {
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
-    flex-basis: calc(100% / 3 - 30px);
-    position: relative;
-    @extend %align-list;
-}
-
-
-
 .work-img-title {
     @extend %align-list;
     justify-content: center;
     position: absolute;
-    @include font(null, 700, 1.4, 0.03em);
+    @include font(null, 700, null, 0.03em);
     text-align: center;
     text-transform: uppercase;
     color: $primary-whyte-color;
     bottom: 0;
-    left: 0;
     background-color: rgba(47, 48, 58, 0.8);
     width: 100%;
     height: 70px;
