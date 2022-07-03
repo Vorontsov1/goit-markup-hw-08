@@ -326,6 +326,7 @@
   display: block;
   margin-left: auto;
   cursor: pointer;
+  margin-bottom: -40px;
 }
 
 .close-menu__icon {
