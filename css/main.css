@@ -1,4 +1,4 @@
-.check-box, .check-text, .modal-close, .submit-btn, .footer-social-link, .clients-link, .clients-list, .team-social-link, .work-img-title, .section-pic_item, .menu-close__btn, .header-mail, .header-list, .contacts, .adress-contacts, .adress-mail, .header-nav {
+.check-box, .check-text, .modal-close, .submit-btn, .footer-social-link, .clients-link, .team-social-link, .work-img-title, .section-pic_item, .menu-close__btn, .header-mail, .header-list, .contacts, .adress-contacts, .adress-mail, .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -779,38 +779,55 @@
   fill: currentColor;
 }
 
-.clients-title {
-  margin-bottom: 50px;
-}
-
 .clients-list {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: -30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
 }
 .clients-list__item {
-  width: 170px;
-  height: 92px;
+  width: calc((100% - 30px) / 2);
+  margin-bottom: 30px;
 }
-.clients-list__item + .clients-list__item {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list__item {
+    width: calc((100% - 150px) / 6);
+    margin-bottom: 0;
+  }
 }
 
 .clients-link {
   width: 100%;
-  height: 100%;
+  height: 92px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: var(--social-icon-color);
-  border: 1px solid var(--social-icon-color);
+  color: #AFB1B8;
+  border: 1px solid #AFB1B8;
   border-radius: 4px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover, .clients-link:focus {
-  color: var(--accent-text-color);
-  border-color: var(--accent-text-color);
+  color: #2196F3;
+  border-color: #2196F3;
 }
 
 .clients-icon {
