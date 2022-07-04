@@ -2,61 +2,222 @@
     background: $footer-background-color;
     padding-top: 60px;
     padding-bottom: 60px;
-    min-height: 252px;
+    text-align: left;
+}
 
-    &-left {
-        margin-right: 70px;
+.footer-wrap {
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
+
+.footer-left {
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        margin-bottom: 60px;
     }
 
-    &-logo {
-        font-family: Raleway;
-        @include font(26px, 700, null, null);
-        font-style: normal;
-        display: block;
-        margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+        justify-content: unset;
+        margin-bottom: 0;
     }
 
-    &-contact {
-        font-style: normal;
-        @include font(14px, null, 1.71, 0.03em);
-        color: $primary-whyte-color;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    //    margin-right: 70px;
+}
 
-        &:hover,
-        &:focus {
-            color: $accent-text-color;
+.footer-contacts__wrap {
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+    margin-bottom: 0;
         }
     }
 
-    &-logo-web {
+
+.footer-logo {
+    font-family: Raleway;
+    @include font(26px, 700, null, null);
+    font-style: normal;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-contact {
+    font-style: normal;
+    @include font(14px, null, 1.71, 0.03em);
+    color: $primary-whyte-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
         color: $accent-text-color;
     }
+}
 
-    &-logo-studio {
-        color: $primary-whyte-color;
+.footer-logo-web {
+    color: $accent-text-color;
+}
+
+.footer-logo-studio {
+    color: $primary-whyte-color;
+}
+
+.contact-adress 
+.contact-mail{
+    margin-bottom: 8px;
+    @media screen and (min-width:1200px) {
+        margin-bottom: 9px;
     }
+}
 
-    &-mail,
-    &-tel {
-        font-style: normal;
-        @include font(14px, null, 1.71, 0.03em);
-        color: $address-footer-color;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.footer-mail,
+.footer-tel {
+    font-style: normal;
+    @include font(14px, null, 1.71, 0.03em);
+    color: $address-footer-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover,
-        &:focus {
-            color: $accent-text-color;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $accent-text-color;
+    }
+}
+
+.footer-social__wrap {
+    @media screen and (min-width: 768px) {
+            margin-bottom: 0;
         }
+    
+        @media screen and (min-width: 1200px) {
+            margin-left: 70px;
+        }
+}
+
+.footer-join {
+    margin-bottom: 20px;
+    color: $primary-whyte-color;
+    @include font(14px, 600, 1.14, 0.03em);
+    text-transform: uppercase;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.footer-social-item {
+    width: 44px;
+    height: 44px;
+
+    &+& {
+        margin-left: 10px;
+    }
+}
+
+.footer-social-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 10%);
+    @extend %align-list;
+    justify-content: center;
+    color: $primary-whyte-color;
+    transition: cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-text-color;
+    }
+}
+
+.footer-social-icon {
+    fill: currentColor;
+}
+
+.subcr-wrap {
+    @media screen and (min-width: 1200px) {
+            margin-left: auto;
+    }
+}
+
+.footer-form {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: flex-end;
+        }
+}
+
+.form-title {
+    width: 100%;
+    font-style: normal;
+    @include font(14px, 700, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: $primary-whyte-color;
+    margin-bottom: 20px;
+}
+
+.subscr {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+    max-width: 450;
+    height: 50;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    @include font(16px, 400, 1.25, 0.03em, rgba(255, 255, 255, 0.6));
+    outline: none;
+    @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+            width: 358px;
+            margin-right: 12px;
+        }
+}
+
+.submit-btn {
+    width: 200px;
+    height: 50px;
+    display: inline-flex;
+    @extend %align-list;
+    justify-content: space-between;
+    padding: 10px 29px;
+    background: $accent-text-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-family: inherit;
+    @include font(16px, 700, 1.88, 0.06em);
+    margin-left: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
     }
 }
 
 
 
 
-.adress {
-    margin-bottom: 9px;
-}
-
-.mail {
-    margin-bottom: 9px;
+.submit-icon {
+    fill: $primary-whyte-color;
+    margin-left: 10px;
 }
