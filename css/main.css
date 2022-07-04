@@ -1554,11 +1554,14 @@
   color: rgba(255, 255, 255, 0.6);
   outline: none;
 }
+@media screen and (min-width: 768px) {
+  .subscr {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscr {
-    margin-bottom: 0;
     width: 358px;
-    margin-right: 12px;
   }
 }
 
