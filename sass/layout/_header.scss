@@ -26,6 +26,10 @@
 .adress-list {
     display: flex;
     margin-left: auto;
+
+    @media screen and (max-width: 786px) {
+        display: none;
+    }
 }
 
 .adress-mail {
@@ -43,13 +47,21 @@
 
 
 
-.contacts {
-    @extend %align-list;
+.header-container {
+    display: flex;
+    align-items: center;
 }
 
 
 .header-list {
-    @extend %align-list;
+    display: flex;
+    align-items: center;
+}
+
+.header-menu {
+    @media screen and (max-width: 786px) {
+        display: none;
+    }
 }
 
 .header-link {
@@ -147,33 +159,34 @@
 .mob-menu-botttom {
     margin-top: auto;
 }
+
 .menu-open__btn {
     width: 40px;
-        height: 40px;
-        background-color: transparent;
-        border: none;
-        transition: fill $effects-option;
-    
-        &:hover,
-        &:focus {
-            fill: $button-hover-color;
-        }
-    
-        @media screen and (min-width: 786px) {
-            display: none;
-        }
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    transition: fill $effects-option;
+    &:hover,
+    &:focus,
+    &:active {
+        fill: $button-hover-color;
+    }
+
+    @media screen and (min-width: 786px) {
+        display: none;
+    }
 }
 
 .menu-close__btn {
     width: 40px;
-        height: 40px;
-        @extend %align-list;
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        border: none;
-        border-radius: 50%;
-        background-color: transparent;
+    height: 40px;
+    @extend %align-list;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
 }
 
 .menu-open__btn,

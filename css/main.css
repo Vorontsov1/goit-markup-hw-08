@@ -1,4 +1,4 @@
-.submit-btn, .footer-social-link, .check-box, .check-text, .modal-close, .clients-link, .team-social-link, .work-img-title, .section-pic_item, .menu-close__btn, .header-mail, .header-list, .contacts, .adress-contacts, .adress-mail, .header-nav {
+.submit-btn, .footer-social-link, .check-box, .check-text, .modal-close, .clients-link, .team-social-link, .work-img-title, .section-pic_item, .menu-close__btn, .header-mail, .adress-contacts, .adress-mail, .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,9 +183,38 @@
   display: flex;
   margin-left: auto;
 }
+@media screen and (max-width: 786px) {
+  .adress-list {
+    display: none;
+  }
+}
 
 .adress-contacts:not(:last-child) {
   margin-left: 50px;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 786px) {
+  .header-menu {
+    display: none;
+  }
 }
 
 .header-link {
@@ -301,7 +330,7 @@
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-open__btn:hover, .menu-open__btn:focus {
+.menu-open__btn:hover, .menu-open__btn:focus, .menu-open__btn:active {
   fill: #188ce8;
 }
 @media screen and (min-width: 786px) {
@@ -417,19 +446,14 @@
   color: #2196F3;
 }
 
-.hero-container {
-  text-align: center;
-}
-
 .hero {
+  width: 100%;
   background: var(--footer-background-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  max-width: 1600px;
-  height: 600px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -487,11 +511,6 @@
   line-height: 1.62;
   letter-spacing: 0.06em;
   color: #ffffff;
-}
-@media screen and (max-width: 1199px) {
-  .hero .hero-title {
-    max-width: 360px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .hero .hero-title {
