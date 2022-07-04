@@ -839,6 +839,7 @@
   background: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
+  min-height: 252px;
 }
 .footer-left {
   margin-right: 70px;
