@@ -25,11 +25,15 @@
         <div class="container header-container">
             <nav class="header-nav">
                 <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span> </a>
+                <button type="button" class="menu-open__btn" data-menu-open>
+                    <svg class="open-menu__icon" width="24" height="16">
+                        <use href="./img/open-close.svg#icon-menu_24px"></use>
+                    </svg>
+                </button>
                 <div class="header-menu">
                     <ul class="header-list list">
                         <li class="header-item"><a href="./index.html" class="header-link link">Студия</a></li>
-                        <li class="header-item"><a href="./portfolio.html"
-                                class="header-link link current">Портфолио</a></li>
+                        <li class="header-item"><a href="./portfolio.html" class="header-link link current">Портфолио</a></li>
                         <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
                     </ul>
             </nav>
@@ -50,11 +54,7 @@
                 </li>
             </ul>
         </div>
-        <button type="button" class="menu-open__btn" data-menu-open>
-            <svg class="open-menu__icon" width="24" height="16">
-                <use href="./img/open-close.svg#icon-menu_24px"></use>
-            </svg>
-        </button>
+    
         <div class="mob-menu is-hidden" data-menu>
             <div class="mob-menu__wrap">
                 <div class="mob-menu__top">
@@ -64,10 +64,9 @@
                         </svg>
                     </button>
                     <ul class="mob-menu__nav">
-                        <li class="mob-menu__item"><a href="./index.html" class="link mob-menu__nav-link">Студия</a>
-                        </li>
-                        <li class="mob-menu__item"><a href="./portfolio.html"
-                                class="link mob-menu__nav-link mob-menu__nav-link_current">Портфолио</a>
+                        <li class="mob-menu__item"><a href="./index.html"
+                                class="link mob-menu__nav-link mob-menu__nav-link">Студия</a></li>
+                        <li class="mob-menu__item"><a href="./portfolio.html" class="link mob-menu__nav-link link mob-menu__nav-link_current">Портфолио</a>
                         </li>
                         <li class="mob-menu__item"><a href="" class="link mob-menu__nav-link">Контакты</a></li>
                     </ul>
@@ -80,7 +79,7 @@
                         <li class="mob-menu__contacts-item"><a href="mailto:info@devstudio.com"
                                 class="link mob-menu__contacts-mail">info@devstudio.com</a></li>
                     </ul>
-
+    
                     <ul class="list mob-menu__socials">
                         <li class="social__item"><a href="https://www.Instagram.com/" target="_blank"
                                 rel="noreferrer noopener" class="link mob-menu__social__link">Instagram</a></li>
