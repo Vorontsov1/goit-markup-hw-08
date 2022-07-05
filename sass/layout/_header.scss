@@ -3,10 +3,14 @@
     text-decoration: none;
     font-family: "Raleway";
     @include font(26px, 700, 1.2, 0.03em);
-    margin-right: 93px;
+
     display: block;
-    padding-top: 24px;
-    padding-bottom: 25px;
+
+    @media screen and (min-width:768px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-right: 93px;
+    }
 
 }
 
@@ -21,6 +25,11 @@
 
 .header-nav {
     @extend %align-list;
+    width: 100%;
+
+    @media screen and (max-width:767px) {
+        padding: 10px 0 10px;
+    }
 }
 
 .adress-list {
@@ -29,6 +38,11 @@
 
     @media screen and (max-width: 786px) {
         display: none;
+    }
+
+    @media screen and (max-width:1199px) {
+        padding: 0;
+        flex-direction: column;
     }
 }
 
@@ -109,6 +123,8 @@
 }
 
 .header-contacts {
+    display: flex;
+    align-items: center;
     color: $secondary-text-color;
     text-decoration: none;
     @include font(14px, 500, 1.14, 0.02em);
@@ -121,6 +137,14 @@
     &:focus {
         color: $accent-text-color;
     }
+
+    @media screen and (max-width:1199px) {
+        padding: 0;
+
+
+    }
+
+
 }
 
 .mailto,
