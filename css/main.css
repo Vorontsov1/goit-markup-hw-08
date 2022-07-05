@@ -885,9 +885,6 @@
   }
 }
 
-.project-list__item {
-  margin-bottom: 30px;
-}
 @media screen and (min-widht: 768px) {
   .project-list__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
@@ -954,7 +951,7 @@
   color: #757575;
 }
 
-.setup-item-wrap {
+.project-item__wrap {
   position: relative;
   overflow: hidden;
 }
