@@ -156,23 +156,24 @@
     height: 100%;
 }
 
-.mob-menu-botttom {
-    margin-top: auto;
-}
+
 
 .menu-open__btn {
+    display: block;
     width: 40px;
     height: 40px;
     background-color: transparent;
     border: none;
     transition: fill $effects-option;
+    margin-left: auto;
+
     &:hover,
     &:focus,
     &:active {
         fill: $button-hover-color;
     }
 
-    @media screen and (min-width: 786px) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
 }
@@ -187,14 +188,6 @@
     border: none;
     border-radius: 50%;
     background-color: transparent;
-    display: block;
-    margin-left: auto;
-    cursor: pointer;
-    margin-bottom: -40px;
-}
-
-.menu-open__btn,
-.menu-close__btn {
     display: block;
     margin-left: auto;
     cursor: pointer;
