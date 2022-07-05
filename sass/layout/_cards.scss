@@ -3,18 +3,29 @@
 }
 
 .card-set {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+display: block;
+    margin-top: 40px;
+    margin-bottom: -30px;
+    @media screen and (min-width:768px) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    @media screen and (min-width:1200px) {
+            margin-top: 50px;
+    
+        }
 }
 
 .setup {
+    margin-bottom: 30px;
+
     @media screen and (min-widht:768px) {
-        flex-basis: calc(100% / 2 - 30px);
+        flex-basis: calc((100% - 30px) / 2);
     }
 
     @media screen and (min-widht:1200px) {
-        flex-basis: calc(100% / 3 - 30px);
+        flex-basis: calc((100% - 60px) / 3);
     }
 }
 
