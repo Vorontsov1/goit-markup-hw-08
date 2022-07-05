@@ -983,19 +983,6 @@
           transform: translateY(0);
 }
 
-.portfolio-item {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  background-color: #ffffff;
-  border-radius: 4px;
-  color: #000000;
-}
-.portfolio-item {
-  cursor: pointer;
-}
-
 .backdrop {
   width: 100vw;
   height: 100vh;
