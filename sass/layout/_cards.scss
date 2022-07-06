@@ -91,12 +91,12 @@
    height: 100%;
    padding: 63px 24px;
    background-color: rgba(33, 150, 243, 0.9);
-   transform: translateY(100%);
+   transform: translateY(101%);
    transition: transform $effects-option,
    background-color $effects-option;
    overflow-y: auto;
 }
 
-.project-img {
-    width: 100%;
-}
+// .project-img {
+//     width: 100%;
+// }
