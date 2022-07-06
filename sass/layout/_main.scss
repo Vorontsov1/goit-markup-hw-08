@@ -2,7 +2,6 @@
     @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         margin-bottom: -30px;
         justify-content: space-between;
     }
@@ -30,7 +29,7 @@
 .main-about+.main-about {
     margin-top: 30px;
 
-    @media screen and (min-widtg:768px) {
+    @media screen and (min-width:768px) {
         margin-top: 0;
     }
   }
@@ -38,40 +37,30 @@
 
 .main-section-item {
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 120px;
+        width: 100%;
         background-color: $secondary-background-color;
         border-radius: 4px;
-        margin-bottom: 30px;
-    
-        @include tablet {
-            width: 354px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    
-        @media screen and (min-width: 1200px) {
-            width: 270px;
-            height: 120px;
-        }
+       
     }
 
 .main-title {
     text-transform: uppercase;
-    margin-bottom: 10px;
-    @include font(14px, 700, 1.14, 0.03em);
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 14px;
     color: $primary-text-color;
+    @media screen and (min-width:768px) {
+        text-align: left;
+    }
 }
 
 .main-text {
+    margin-top: 10px;
     text-align: left;
-    @include font(14px, 400, 1.71, 0.03em);
+    @include font(14px, 400, 1.71, null);
     color: $secondary-text-color;
 }
-
-
-
-
