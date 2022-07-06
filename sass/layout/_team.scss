@@ -56,26 +56,11 @@
     margin-bottom: 16px;
 }
 
-
-// .our-team {
-//     width: 1600px;
-//     height: 648px;
-//     left: 0px;
-//     top: 1449px;
-//     background: $secondary-background-color;
-// }
-
-
 .team-item {
     @include font(36px, 700, 1.17, 0.03em);
     margin-bottom: 50px;
     color: $primary-black-color;
 }
-
-
-
-
-
 
 .team-social-list {
     display: flex;
