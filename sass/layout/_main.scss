@@ -62,13 +62,13 @@
 .main-title {
     text-transform: uppercase;
     margin-bottom: 10px;
-    @include font(700, null, 1.14, null);
+    @include font(14px, 700, 1.14, 0.03em);
     color: $primary-text-color;
 }
 
 .main-text {
     text-align: left;
-    @include font(400, null, 1.71, null);
+    @include font(14px, 400, 1.71, 0.03em);
     color: $secondary-text-color;
 }
 
