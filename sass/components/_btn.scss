@@ -20,9 +20,9 @@
  .main-btn {
      display: flex;
      flex-wrap: wrap;
-     justify-content: center;
+     justify-content: flex-start;
      margin-top: -15px;
-     margin-bottom: 30px;
+     margin-bottom: 40px;
      margin-left: -8px;
         @media screen and (min-widht: 768px) {
             margin-bottom: 30px;

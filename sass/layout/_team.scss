@@ -57,10 +57,16 @@
 }
 
 .team-item {
-    @include font(36px, 700, 1.17, 0.03em);
-    margin-bottom: 50px;
-    color: $primary-black-color;
-}
+    @include font(28px, 700, 1.17, 0.03em);
+     color: $primary-black-color;
+      margin-bottom: 30px;
+
+      @media screen and (min-width: 1200px) {
+          font-size: 36px;
+          line-height: 1.17;
+          margin-bottom: 50px;
+      }
+ }
 
 .team-social-list {
     display: flex;
