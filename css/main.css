@@ -1370,14 +1370,10 @@
   margin-right: 5px;
   cursor: pointer;
 }
-@media screen and (max-width: 479px) {
-  .check-text {
-    font-size: 2.5vw;
-  }
-}
 @media screen and (min-width: 1200px) {
   .check-text {
     font-size: 14px;
+    line-height: 1.71;
   }
 }
 .check-text-link {
@@ -1516,6 +1512,7 @@
 
 .footer-social__title {
   margin-bottom: 20px;
+  font-weight: 700;
   font-size: 14px;
   letter-spacing: 1.14;
   text-transform: uppercase;
