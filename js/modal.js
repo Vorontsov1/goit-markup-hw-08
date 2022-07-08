@@ -10,6 +10,6 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
-    refs.menu.classList.toggle('no-scroll');
+
   }
 })();

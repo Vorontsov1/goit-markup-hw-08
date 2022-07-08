@@ -10,6 +10,5 @@
 
   function toggleMenu() {
     refs.menu.classList.toggle('is-hidden');
-    refs.menu.classList.toggle('no-scroll');
   }
 })();
