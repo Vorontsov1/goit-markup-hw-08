@@ -40,6 +40,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .container {
   width: 100%;
@@ -96,12 +102,12 @@
       flex-wrap: wrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start;
+          justify-content: start;
   margin-top: -15px;
   margin-bottom: 40px;
   margin-left: -8px;
 }
-@media screen and (min-widht: 768px) {
+@media screen and (min-width: 768px) {
   .main-btn {
     margin-bottom: 30px;
     -webkit-box-pack: center;
@@ -109,7 +115,7 @@
             justify-content: center;
   }
 }
-@media screen and (min-widht: 1200px) {
+@media screen and (min-width: 1200px) {
   .main-btn {
     margin-bottom: 50px;
   }
